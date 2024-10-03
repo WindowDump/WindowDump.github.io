@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tabletop Ergonomics</title>
+    <link>https://windowdump.github.io/</link>
+    <description>Recent content on Tabletop Ergonomics</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>CC BY-SA 4.0</copyright>
+    <lastBuildDate>Thu, 03 Oct 2024 12:55:34 -0400</lastBuildDate>
+    <atom:link href="https://windowdump.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World!</title>
+      <link>https://windowdump.github.io/posts/my-first-post/</link>
+      <pubDate>Thu, 03 Oct 2024 12:55:34 -0400</pubDate>
+      <guid>https://windowdump.github.io/posts/my-first-post/</guid>
+      <description>This is a test post Hello. This is a post that I might mark as a draft in the near future. It&amp;rsquo;s a testing post that demonstrates various features of this blog and the styles defined for it. I care way too much about this stuff, but I&amp;rsquo;m getting it out of the way so I don&amp;rsquo;t get distracted by it later (I will get distracted by layout and formatting stuff later).</description>
+    </item>
+    <item>
+      <title>Who is this person</title>
+      <link>https://windowdump.github.io/about/</link>
+      <pubDate>Tue, 01 Oct 2024 12:33:01 -0400</pubDate>
+      <guid>https://windowdump.github.io/about/</guid>
+      <description>My handle is Window Dump (check your man pages to learn more about me). I like computers. I figured out how to program them and get them to do increasingly silly stuff - this blog and its content is just the latest example.&#xA;If you&amp;rsquo;re looking for my hilariously outdated fork of KeyZen, a tool used to practice keyboard layouts (i.e., Dvorak, Colemak, Hands Down), you can find it right here, in the usual location.</description>
+    </item>
+  </channel>
+</rss>
