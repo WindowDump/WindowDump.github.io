@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://windowdump.github.io/files/</loc>
+    <lastmod>2024-10-04T13:09:37-04:00</lastmod>
+  </url><url>
+    <loc>https://windowdump.github.io/</loc>
+    <lastmod>2024-10-04T13:09:37-04:00</lastmod>
+  </url><url>
     <loc>https://windowdump.github.io/posts/my-first-post/</loc>
     <lastmod>2024-10-03T12:55:34-04:00</lastmod>
   </url><url>
     <loc>https://windowdump.github.io/posts/</loc>
-    <lastmod>2024-10-03T12:55:34-04:00</lastmod>
-  </url><url>
-    <loc>https://windowdump.github.io/</loc>
     <lastmod>2024-10-03T12:55:34-04:00</lastmod>
   </url><url>
     <loc>https://windowdump.github.io/tags/</loc>

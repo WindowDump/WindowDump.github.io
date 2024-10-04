@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>CC BY-SA 4.0</copyright>
-    <lastBuildDate>Thu, 03 Oct 2024 12:55:34 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 04 Oct 2024 13:09:37 -0400</lastBuildDate>
     <atom:link href="https://windowdump.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Stuff I made</title>
+      <link>https://windowdump.github.io/files/</link>
+      <pubDate>Fri, 04 Oct 2024 13:09:37 -0400</pubDate>
+      <guid>https://windowdump.github.io/files/</guid>
+      <description>This space intentionally left blank Coming soon:&#xA;PDF&amp;rsquo;s of stuff I made FIST half-letter sheet FIST Operative Handbook WoDu Remix character sheets Black and White Low-Ink, Single Contrast Version Gradients and other textures (color!) Trebuchet Edition (hack in Inkscape) Source for the above Templates? Starter files? Reduce the friction a bit. </description>
+    </item>
     <item>
       <title>Hello World!</title>
       <link>https://windowdump.github.io/posts/my-first-post/</link>
@@ -21,7 +28,7 @@
       <link>https://windowdump.github.io/about/</link>
       <pubDate>Tue, 01 Oct 2024 12:33:01 -0400</pubDate>
       <guid>https://windowdump.github.io/about/</guid>
-      <description>My handle is Window Dump (check your man pages to learn more about me). I like computers. I figured out how to program them and get them to do increasingly silly stuff - this blog and its content is just the latest example.&#xA;If you&amp;rsquo;re looking for my hilariously outdated fork of KeyZen, a tool used to practice keyboard layouts (i.e., Dvorak, Colemak, Hands Down), you can find it right here, in the usual location.</description>
+      <description>My handle is Window Dump (check your man pages to learn more about me, I just output the content of a window to a file in text format). I like computers. I figured out how to program them and get them to do increasingly silly stuff - this blog and its content is just the latest example.&#xA;If you&amp;rsquo;re looking for my old fork of KeyZen, a tool used to practice keyboard layouts (i.</description>
     </item>
   </channel>
 </rss>

@@ -22,21 +22,26 @@
 <h3 id="hot-new-features">Hot New Features</h3>
 <p>I added these because Elstob supports them. They&rsquo;re implemented as Hugo shortcodes.</p>
 <ul>
-<li>Fake uncial mode
+<li>Insular mode
 <ul>
-<li>Use insular letterforms for lowercase letter, caps to small caps. Hold on, is it uncial or insular?
+<li>Uses insular letter shapes and caps to small caps.
 <ul>
-<li><span style="font-feature-settings: 'c2sc', 'ss02'">It&rsquo;s kinda like that movie, <em>The Lord of the Rings</em>.</span></li>
+<li>
+<span style="font-feature-settings: 'c2sc', 'ss02'">It&rsquo;s kinda like that movie, <em>The Lord of the Rings</em>.</span></li>
 </ul>
 </li>
 </ul>
 </li>
-<li>Fake runic mode
+<li>Elder Futhark mode
 <ul>
-<li>Maybe with a few toggleable options. Instantly transform text into strange symbols from a long-past civilization.
+<li>24 Norse runes, maps to  English letters. Q is mapped to K, Y is mapped to I, X is mapped to G.
 <ul>
-<li><span style="font-feature-settings: 'ss12'">runic probably makes more sense than English tbkh</span></li>
-<li><span style="font-feature-settings: 'ss12'">we <em>Ultima</em> now</span></li>
+<li>
+<span style="font-feature-settings: 'ss13'">runic probabli makes more sense than english tbkh</span></li>
+<li>
+<span style="font-feature-settings: 'ss13'">we <em>ultima</em> now</span></li>
+<li>
+<span style="font-feature-settings: 'ss13'">abcdefghijklmnopkrstuvwgiz abcdefghijklmnopkrstuvwgiz</span></li>
 </ul>
 </li>
 </ul>
