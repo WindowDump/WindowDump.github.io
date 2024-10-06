@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fist on Tabletop Ergonomics</title>
+    <link>https://windowdump.github.io/tags/fist/</link>
+    <description>Recent content in Fist on Tabletop Ergonomics</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>CC BY-SA 4.0</copyright>
+    <lastBuildDate>Sun, 06 Oct 2024 12:52:47 -0400</lastBuildDate>
+    <atom:link href="https://windowdump.github.io/tags/fist/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FIST Operative Handbook</title>
+      <link>https://windowdump.github.io/posts/fist-operative-handbook/</link>
+      <pubDate>Sun, 06 Oct 2024 12:52:47 -0400</pubDate>
+      <guid>https://windowdump.github.io/posts/fist-operative-handbook/</guid>
+      <description>FIST Operative Handbook - PDF FIST half-letter character sheet - PDF Source Code (Typst) I&amp;rsquo;m a big fan of FIST, a TTRPG about paranormal mercenaries (think Metal Gear) doing jobs for regular people no one else can (or no one else wants to) during the Cold War (think The A-Team). One of my favorite parts is how quickly a character can be generated, and how flavorful these characters are. Check out FISTREF&amp;rsquo;s Random Merc page if you want to see it in action for yourself.</description>
+    </item>
+  </channel>
+</rss>

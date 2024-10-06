@@ -7,14 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>CC BY-SA 4.0</copyright>
-    <lastBuildDate>Fri, 04 Oct 2024 13:09:37 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 06 Oct 2024 12:57:47 -0400</lastBuildDate>
     <atom:link href="https://windowdump.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WoDu Remix Character Sheet</title>
+      <link>https://windowdump.github.io/posts/wodu-remix-character-sheet/</link>
+      <pubDate>Sun, 06 Oct 2024 12:57:47 -0400</pubDate>
+      <guid>https://windowdump.github.io/posts/wodu-remix-character-sheet/</guid>
+      <description>flare gradient version&#xA;Black &amp;amp; White - PDF Low Ink, Single Contrast - PDF flare, color - PDF Source Code (Typst) Branching off from FIST, I found the neat PbtA + OSR collection on Itch that contains a bunch of games inspired by World of Dungeons (WoDu1), the Dungeon World pre-order bonus that&amp;rsquo;s basically B/X D&amp;amp;D but you do the 2d6 thing from Apocalypse World instead of a d20. Among the collection is Remix (WoDu Remix) which neatly splits the difference between the OSR, storygames, and 5e, and gets me excited about it every time I crack it open.</description>
+    </item>
+    <item>
+      <title>FIST Operative Handbook</title>
+      <link>https://windowdump.github.io/posts/fist-operative-handbook/</link>
+      <pubDate>Sun, 06 Oct 2024 12:52:47 -0400</pubDate>
+      <guid>https://windowdump.github.io/posts/fist-operative-handbook/</guid>
+      <description>FIST Operative Handbook - PDF FIST half-letter character sheet - PDF Source Code (Typst) I&amp;rsquo;m a big fan of FIST, a TTRPG about paranormal mercenaries (think Metal Gear) doing jobs for regular people no one else can (or no one else wants to) during the Cold War (think The A-Team). One of my favorite parts is how quickly a character can be generated, and how flavorful these characters are. Check out FISTREF&amp;rsquo;s Random Merc page if you want to see it in action for yourself.</description>
+    </item>
     <item>
       <title>Stuff I made</title>
       <link>https://windowdump.github.io/files/</link>
       <pubDate>Fri, 04 Oct 2024 13:09:37 -0400</pubDate>
       <guid>https://windowdump.github.io/files/</guid>
-      <description>This space intentionally left blank Coming soon:&#xA;PDF&amp;rsquo;s of stuff I made FIST half-letter sheet FIST Operative Handbook WoDu Remix character sheets Black and White Low-Ink, Single Contrast Version Gradients and other textures (color!) Trebuchet Edition (hack in Inkscape) Source for the above Templates? Starter files? Reduce the friction a bit. </description>
+      <description>Here&amp;rsquo;s some game stuff I made. Source is provided so you can tweak or hack them to your liking. Change fonts, change colors, tweak the words - make it your own! Or print them out and start playing.&#xA;FIST Stuff for FIST - Freelance Infantry Strike Team, a paranormal mercenary TTRPG.&#xA;Operative Handbook Half-letter character sheet, plus character creation rules and a rules reference. Great for new players - read the whole thing, then make a character and fold it in half to maximize table space.</description>
     </item>
     <item>
       <title>Hello World!</title>

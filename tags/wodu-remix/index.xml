@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wodu Remix on Tabletop Ergonomics</title>
+    <link>https://windowdump.github.io/tags/wodu-remix/</link>
+    <description>Recent content in Wodu Remix on Tabletop Ergonomics</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>CC BY-SA 4.0</copyright>
+    <lastBuildDate>Sun, 06 Oct 2024 12:57:47 -0400</lastBuildDate>
+    <atom:link href="https://windowdump.github.io/tags/wodu-remix/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WoDu Remix Character Sheet</title>
+      <link>https://windowdump.github.io/posts/wodu-remix-character-sheet/</link>
+      <pubDate>Sun, 06 Oct 2024 12:57:47 -0400</pubDate>
+      <guid>https://windowdump.github.io/posts/wodu-remix-character-sheet/</guid>
+      <description>flare gradient version&#xA;Black &amp;amp; White - PDF Low Ink, Single Contrast - PDF flare, color - PDF Source Code (Typst) Branching off from FIST, I found the neat PbtA + OSR collection on Itch that contains a bunch of games inspired by World of Dungeons (WoDu1), the Dungeon World pre-order bonus that&amp;rsquo;s basically B/X D&amp;amp;D but you do the 2d6 thing from Apocalypse World instead of a d20. Among the collection is Remix (WoDu Remix) which neatly splits the difference between the OSR, storygames, and 5e, and gets me excited about it every time I crack it open.</description>
+    </item>
+  </channel>
+</rss>

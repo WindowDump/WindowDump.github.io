@@ -7,20 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>CC BY-SA 4.0</copyright>
-    <lastBuildDate>Thu, 03 Oct 2024 12:55:34 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 06 Oct 2024 12:57:47 -0400</lastBuildDate>
     <atom:link href="https://windowdump.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wodu</title>
+      <link>https://windowdump.github.io/tags/wodu/</link>
+      <pubDate>Sun, 06 Oct 2024 12:57:47 -0400</pubDate>
+      <guid>https://windowdump.github.io/tags/wodu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Wodu Remix</title>
+      <link>https://windowdump.github.io/tags/wodu-remix/</link>
+      <pubDate>Sun, 06 Oct 2024 12:57:47 -0400</pubDate>
+      <guid>https://windowdump.github.io/tags/wodu-remix/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fist</title>
+      <link>https://windowdump.github.io/tags/fist/</link>
+      <pubDate>Sun, 06 Oct 2024 12:52:47 -0400</pubDate>
+      <guid>https://windowdump.github.io/tags/fist/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Testing</title>
       <link>https://windowdump.github.io/tags/testing/</link>
       <pubDate>Thu, 03 Oct 2024 12:55:34 -0400</pubDate>
       <guid>https://windowdump.github.io/tags/testing/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Untagged</title>
-      <link>https://windowdump.github.io/tags/untagged/</link>
-      <pubDate>Thu, 03 Oct 2024 12:55:34 -0400</pubDate>
-      <guid>https://windowdump.github.io/tags/untagged/</guid>
       <description></description>
     </item>
   </channel>

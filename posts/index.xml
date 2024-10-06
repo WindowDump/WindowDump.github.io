@@ -6,8 +6,98 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>CC BY-SA 4.0</copyright>
-		<lastBuildDate>Thu, 03 Oct 2024 12:55:34 -0400</lastBuildDate>
+		<lastBuildDate>Sun, 06 Oct 2024 12:57:47 -0400</lastBuildDate>
 		<atom:link href="https://windowdump.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>WoDu Remix Character Sheet</title>
+			<link>https://windowdump.github.io/posts/wodu-remix-character-sheet/</link>
+			<pubDate>Sun, 06 Oct 2024 12:57:47 -0400</pubDate>
+			
+			<guid>https://windowdump.github.io/posts/wodu-remix-character-sheet/</guid>
+			<description><![CDATA[A half-letter character sheet for (World of Dungeons / WoDu) Remix, in various styles.]]></description>
+			<content type="html"><![CDATA[
+<figure class="webp" ><picture>
+          <source srcset="/images/wodu-remix-sheet-halfletter-flare_huc8a94e1ef92101a27bcbdc4167bd8e7f_366276_1860x1426_fit_q75_h2_box_3.webp" type="image/webp">
+          <source srcset="/images/wodu-remix-sheet-halfletter-flare_huc8a94e1ef92101a27bcbdc4167bd8e7f_366276_1860x1426_fit_q75_bgffffff_box_3.jpg" type="image/jpeg">
+          <img src="/images/wodu-remix-sheet-halfletter-flare_huc8a94e1ef92101a27bcbdc4167bd8e7f_366276_1860x1426_fit_q75_h2_box_3.webp"alt="WoDu Remix half-letter character sheet, Flare gradient"  width="1860"  height="1426"  loading="lazy" />
+        </picture><figcaption>
+            <p><code>flare</code> gradient version</p>
+          </figcaption></figure>
+<ul>
+<li><a href="../../stuff/wodu-remix-sheet-halfletter-bw.pdf">Black &amp; White - PDF</a></li>
+<li><a href="../../stuff/wodu-remix-sheet-halfletter-lowink.pdf">Low Ink, Single Contrast - PDF</a></li>
+<li><a href="../../stuff/wodu-remix-sheet-halfletter-flare.pdf">flare, color - PDF</a></li>
+<li><a href="../../stuff/fist-operative-handbook.typ">Source Code (Typst)</a></li>
+</ul>
+<p>Branching off from <em>FIST</em>, I found the neat <a href="https://itch.io/c/3165867/pbta-osr-synthesis">PbtA + OSR collection on Itch</a> that contains a bunch of games inspired by <a href="https://johnharper.itch.io/world-of-dungeons">World of Dungeons</a> (<em>WoDu</em><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>), the <em>Dungeon World</em> pre-order bonus that&rsquo;s basically <em>B/X D&amp;D</em> but you do the 2d6 thing from <em>Apocalypse World</em> instead of a d20. Among the collection is <a href="https://katamoiran.itch.io/remix">Remix</a> (<em>WoDu Remix</em>) which neatly splits the difference between the OSR, storygames, and <em>5e</em>, and gets me excited about it every time I crack it open.</p>
+<p>After finishing up the <em>FIST</em> character sheet, I decided to try a <em>WoDu Remix</em> sheet since the two games are similar. Taking the original <em>WoDu</em> sheet as inspiration, I added the new skill list, provided more room for special abilities, and added the extra stats <em>WoDu Remix</em> has (heritage, bonus damage, first aid, debilities).</p>
+<p>During the process I realized I could build a sheet out of negative space on top of a colored background, bypassing Typst&rsquo;s lack of mask support. This let me make some fairly striking designs with gradients on the borders. Typst comes loaded with a bunch of cool data visualization gradients (<code>flare</code> is a standout) and it&rsquo;s easy to make your own.</p>
+<p>I made a few different versions of the sheet. First up is classic <em>black &amp; white</em>, which would probably look good out of a laser printer.</p>
+
+<figure class="webp" ><a href="../../stuff/wodu-remix-sheet-halfletter-bw.pdf"><picture>
+          <source srcset="/images/wodu-remix-sheet-halfletter-bw_hud2aa8a4e3e9d3645c6ca8d0ac2f607ba_158518_1860x1426_fit_q75_h2_box_3.webp" type="image/webp">
+          <source srcset="/images/wodu-remix-sheet-halfletter-bw_hud2aa8a4e3e9d3645c6ca8d0ac2f607ba_158518_1860x1426_fit_q75_bgffffff_box_3.jpg" type="image/jpeg">
+          <img src="/images/wodu-remix-sheet-halfletter-bw_hud2aa8a4e3e9d3645c6ca8d0ac2f607ba_158518_1860x1426_fit_q75_h2_box_3.webp"alt="WoDu Remix half-letter character sheet, black &amp; white"  width="1860"  height="1426"  loading="lazy" />
+        </picture></a><figcaption>
+            <h4><a href="../../stuff/wodu-remix-sheet-halfletter-bw.pdf">Black &amp; White - PDF</a></h4>
+          </figcaption></figure>
+<p>Next is a high-contrast, lower ink version. It features only black text and a <code>0.25pt</code> stroke around the small boxes players write in. This is suitable for ink-jet printers and photocopiers. You may also find it easier to read.</p>
+
+<figure class="webp" ><a href="../../stuff/wodu-remix-sheet-halfletter-lowink.pdf"><picture>
+          <source srcset="/images/wodu-remix-sheet-halfletter-lowink_hu383df2949f6c9d31d3b21649677f6ff3_168187_1860x1426_fit_q75_h2_box_3.webp" type="image/webp">
+          <source srcset="/images/wodu-remix-sheet-halfletter-lowink_hu383df2949f6c9d31d3b21649677f6ff3_168187_1860x1426_fit_q75_bgffffff_box_3.jpg" type="image/jpeg">
+          <img src="/images/wodu-remix-sheet-halfletter-lowink_hu383df2949f6c9d31d3b21649677f6ff3_168187_1860x1426_fit_q75_h2_box_3.webp"alt="WoDu Remix half-letter character sheet, low-ink single contrast"  width="1860"  height="1426"  loading="lazy" />
+        </picture></a><figcaption>
+            <h4><a href="../../stuff/wodu-remix-sheet-halfletter-lowink.pdf">Low Ink, Single Contrast - PDF</a></h4>
+          </figcaption></figure>
+<p>Finally, we have one with the <code>flare</code> gradient from Typst, a yellow to purple gradient that is perceptibly uniform with colors reminsicient of a sunset. I added a chrome text effect to the header text as well.</p>
+
+<figure class="webp" ><a href="../../stuff/wodu-remix-sheet-halfletter-flare.pdf"><picture>
+          <source srcset="/images/wodu-remix-sheet-halfletter-flare_huc8a94e1ef92101a27bcbdc4167bd8e7f_366276_1860x1426_fit_q75_h2_box_3.webp" type="image/webp">
+          <source srcset="/images/wodu-remix-sheet-halfletter-flare_huc8a94e1ef92101a27bcbdc4167bd8e7f_366276_1860x1426_fit_q75_bgffffff_box_3.jpg" type="image/jpeg">
+          <img src="/images/wodu-remix-sheet-halfletter-flare_huc8a94e1ef92101a27bcbdc4167bd8e7f_366276_1860x1426_fit_q75_h2_box_3.webp"alt="WoDu Remix half-letter character sheet, Flare gradient"  width="1860"  height="1426"  loading="lazy" />
+        </picture></a><figcaption>
+            <h4><a href="../../stuff/wodu-remix-sheet-halfletter-flare.pdf"><code>flare</code> gradient - PDF</a></h4>
+          </figcaption></figure>
+<p>It&rsquo;s easy to riff on these, if you have Typst set up download the source code and try playing with it. Try changing the color of the grid, or messing with a gradient, or applying an image or pattern, etc. You can also change the fonts if you decide Trebuchet is more your speed than Jost, for example.</p>
+<p>If you want to start making your own <em>WoDu</em> hack, you could start by editing this character sheet! Change the attributes to something more flavorful, choose skills that model the world you&rsquo;re playing in, decide what stats you need, and keep going! You&rsquo;ll be ready for playtesting in no time.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>That&rsquo;s <em>WoDu</em>, not <em>WoD</em> which is <em>World of Darkness</em>.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+]]></content>
+		</item>
+		
+		<item>
+			<title>FIST Operative Handbook</title>
+			<link>https://windowdump.github.io/posts/fist-operative-handbook/</link>
+			<pubDate>Sun, 06 Oct 2024 12:52:47 -0400</pubDate>
+			
+			<guid>https://windowdump.github.io/posts/fist-operative-handbook/</guid>
+			<description><![CDATA[A zine-style half-letter character sheet and rules summary for FIST, a paranormal mercenary TTRPG]]></description>
+			<content type="html"><![CDATA[
+<figure class="webp" ><picture>
+          <source srcset="/images/fist-handbook_hu7838f2a5e1a46772b1cd164ed9dd9086_301065_1269x1006_fit_q75_h2_box_3.webp" type="image/webp">
+          <source srcset="/images/fist-handbook_hu7838f2a5e1a46772b1cd164ed9dd9086_301065_1269x1006_fit_q75_bgffffff_box_3.jpg" type="image/jpeg">
+          <img src="/images/fist-handbook_hu7838f2a5e1a46772b1cd164ed9dd9086_301065_1269x1006_fit_q75_h2_box_3.webp"alt="FIST Operative Handbook preview"  width="1269"  height="1006"  loading="lazy" />
+        </picture></figure>
+<ul>
+<li><a href="../../stuff/fist-operative-handbook.pdf">FIST Operative Handbook - PDF</a></li>
+<li><a href="../../stuff/fist-sheet-halfletter.pdf">FIST half-letter character sheet - PDF</a></li>
+<li><a href="../../stuff/fist-operative-handbook.typ">Source Code (Typst)</a></li>
+</ul>
+<p>I&rsquo;m a big fan of <a href="https://claymorerpgs.itch.io/fist">FIST</a>, a TTRPG about paranormal mercenaries (think <em>Metal Gear</em>) doing jobs for regular people no one else can (or no one else wants to) during the Cold War (think <em>The A-Team</em>). One of my favorite parts is how quickly a character can be generated, and how flavorful these characters are. Check out <a href="https://fistref.com/random-merc">FISTREF&rsquo;s Random Merc page</a> if you want to see it in action for yourself. FIST&rsquo;s anti-canon sandbox defines the world with the help of the characters.</p>
+<p>FIST&rsquo;s core is short and concise, and I decided to combine a rules reference and a character sheet together for a zine-style booklet. This is particularly useful for new players who haven&rsquo;t read the player rules yet. You can read both sides, follow the character creation rules on the outside, then fold it in half to maximize table space.</p>
+<p>This was a first project in <a href="https://typst.app/">Typst</a> so there&rsquo;s probably a lot of ugly hacks in there - I might clean it up later. Possible project for the reader: replace Orbitron and Michroma with Microgramma (aka the <em>Drake &amp; Josh</em> font), update letter-spacing as needed.</p>
+<p>I also made a version that&rsquo;s just the character sheet twice, so you can print out two character sheets at once!</p>
+<p>This is kind of a cool format for a one-page game that was surprisingly easy to whip up.</p>
+]]></content>
+		</item>
 		
 		<item>
 			<title>Hello World!</title>
@@ -46,6 +136,11 @@
 <span style="font-feature-settings: 'ss13'">abcdefghijklm nopkrstuvwgiz abcdefghijklm nopkrstuvwgiz</span></li>
 </ul>
 </li>
+<li>Changed syntax highlighting style
+<ul>
+<li>Slammed <a href="https://draculatheme.com/contribute#color-palette">Dracula</a> on the site. I dunno, I dig the high contrast candy colors of that theme.</li>
+</ul>
+</li>
 </ul>
 <h3 id="todo">todo</h3>
 <p>Here is a wishlist of things I&rsquo;d like to do in the near future:</p>
@@ -59,12 +154,6 @@
 </ul>
 </li>
 <li>I get to practice making tables.</li>
-</ul>
-</li>
-<li>Change syntax highlighting style
-<ul>
-<li>Inflict <a href="https://draculatheme.com">Dracula</a> on the site. I dunno, I dig the high contrast candy colors of that theme.</li>
-<li>Maybe I go with <a href="https://github.com/srcery-colors">srcery</a> instead, for warm vibes.</li>
 </ul>
 </li>
 <li>A large number of imperceptable changes you will never notice but I can&rsquo;t stop staring at.
