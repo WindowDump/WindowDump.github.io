@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Fist on Tabletop Ergonomics</title>
+    <title>FIST on Tabletop Ergonomics</title>
     <link>https://windowdump.github.io/tags/fist/</link>
-    <description>Recent content in Fist on Tabletop Ergonomics</description>
+    <description>Recent content in FIST on Tabletop Ergonomics</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>CC BY-SA 4.0</copyright>
-    <lastBuildDate>Sun, 06 Oct 2024 12:52:47 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 26 Apr 2025 16:36:39 -0400</lastBuildDate>
     <atom:link href="https://windowdump.github.io/tags/fist/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Runic Magic</title>
+      <link>https://windowdump.github.io/posts/runic-magic/</link>
+      <pubDate>Sat, 26 Apr 2025 16:36:39 -0400</pubDate>
+      <guid>https://windowdump.github.io/posts/runic-magic/</guid>
+      <description>Runic Magic - PDF Source code (Typst) Original text by skander. Shout out to skander&amp;rsquo;s itch, get his version of this document to double your runes.&#xA;Lightweight interpretive magic system. Uses the Runes from the classic Ultima CRPG series. These are the building blocks of Britiannian magic: each spell is made of one or more runes, and casting them in some games requires you to type in the runes for the spell every time you cast it.</description>
+    </item>
     <item>
       <title>FIST Operative Handbook</title>
       <link>https://windowdump.github.io/posts/fist-operative-handbook/</link>

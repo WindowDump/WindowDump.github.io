@@ -6,8 +6,205 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>CC BY-SA 4.0</copyright>
-		<lastBuildDate>Sun, 06 Oct 2024 12:57:47 -0400</lastBuildDate>
+		<lastBuildDate>Sat, 26 Apr 2025 16:47:32 -0400</lastBuildDate>
 		<atom:link href="https://windowdump.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Longshot City Character Sheet</title>
+			<link>https://windowdump.github.io/posts/longshot-city-character-sheet/</link>
+			<pubDate>Sat, 26 Apr 2025 16:47:32 -0400</pubDate>
+			
+			<guid>https://windowdump.github.io/posts/longshot-city-character-sheet/</guid>
+			<description><![CDATA[Character sheet and quick reference sheet for Longshot City, the superhero TTRPG built on Troika!.]]></description>
+			<content type="html"><![CDATA[
+<figure class="webp" ><picture>
+          <source srcset="/images/longshot-city-character-sheet_hu8a4bbb3ec58474e28a9e8e396f0dff72_92102_1349x1044_fit_q75_h2_box_3.webp" type="image/webp">
+          <source srcset="/images/longshot-city-character-sheet_hu8a4bbb3ec58474e28a9e8e396f0dff72_92102_1349x1044_fit_q75_bgffffff_box_3.jpg" type="image/jpeg">
+          <img src="/images/longshot-city-character-sheet_hu8a4bbb3ec58474e28a9e8e396f0dff72_92102_1349x1044_fit_q75_h2_box_3.webp"alt="Longshot City character sheet"  width="1349"  height="1044"  loading="lazy" />
+        </picture></figure>
+<ul>
+<li><a href="https://github.com/WindowDump/typst-ttrpg/blob/main/orbital-blues-char-print-friendly.pdf">Longshot City character sheet and quick reference - PDF</a></li>
+<li><a href="https://github.com/WindowDump/typst-ttrpg/blob/main/longshot-city.typ">Source code (Typst)</a></li>
+</ul>
+<p>Link to <a href="https://melsonian-arts-council.itch.io/longshot-city">Longshot City</a>.</p>
+<p>The one time I ran this game I had a time-traveling ghost possess a mouse and hack into Rocketman&rsquo;s computer.</p>
+<h1 id="source-code-discussion">Source code discussion</h1>
+<p>This is the first horizontal full-page character sheet I made. I made it in <a href="https://typst.app">Typst</a>.</p>
+<h2 id="font-choice">Font choice</h2>
+<p>I went with the <a href="https://fonts.google.com/specimen/Patrick+Hand+SC">Patrick Hand SC</a> font as an easy option for a handwritten font. Kinda like comics. For numbers I used <a href="https://www.behance.net/gallery/86895479/Comic-Helvetic-(Lat-Cyr)">Comic Helvetic</a>, a blursed cross between Comic Sans and Helvetica. Tables use <a href="https://github.com/huertatipografica/Alegreya">Alegreya</a>.</p>
+<h2 id="fun-with-layout">Fun with layout</h2>
+<p>I started by making a loose facsimile of the official sheet, with the grid evenly split down the center. After a while, I remembered I didn&rsquo;t need to fold this, so I messed around with the grid widths. This let me give the skills &amp; powers list and attacks list a bit more room to breathe.</p>
+<h2 id="content-from-ranges">Content from ranges</h2>
+<p>In the <a href="content/posts/runic-magic.md">Runic Magic</a> doc, I used <code>array.map</code> to create content from an array of dictionaries. In this one, I use a <code>for</code> loop over a <code>range()</code>, each loop returning a 1-length <code>array</code> which are then combined into a single <code>array</code>, which is finally spread to make numbered copies of lines.</p>
+
+    <aside class="admonition warning">
+        <div class="admonition-title">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle">
+      <circle cx="12" cy="12" r="10"></circle>
+      <line x1="12" y1="8" x2="12" y2="12"></line>
+      <line x1="12" y1="16" x2="12.01" y2="16"></line>
+   </svg></div>Combined content</div>
+        <div class="admonition-content"><p>If your <code>for</code> loop returns <code>content</code>, it will all be merged into a single <code>content</code> object.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">grid</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">columns</span><span class="o">:</span> <span class="mi">7</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="k">for</span> <span class="nx">x</span> <span class="k">in</span> <span class="nx">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">str</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">ab_label</span><span class="p">[</span><span class="mi">7</span><span class="o">+</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span></code></pre></div><p>This loop produces a single <code>content</code> object: <code>[123456]</code>.</p>
+</div>
+    </aside>
+
+    <aside class="admonition tip">
+        <div class="admonition-title">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+   </svg></div>Spreading for loop</div>
+        <div class="admonition-content"><p>Return a 1-length array to have the <code>for</code> loop merge them all into a single <code>array</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">grid</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">columns</span><span class="o">:</span> <span class="mi">7</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">..</span><span class="k">for</span> <span class="nx">x</span> <span class="k">in</span> <span class="nx">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nx">str</span><span class="p">(</span><span class="nx">x</span><span class="p">),)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">ab_label</span><span class="p">[</span><span class="mi">7</span><span class="o">+</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span></code></pre></div><p>Spread the result and the <code>grid</code> will be populated as desired.</p>
+</div>
+    </aside>
+<h2 id="quick-reference-sheet">Quick reference sheet</h2>
+<p>An exercise in information density. <em>Longshot City</em> uses per-weapon lookup tables for damage, which you copy onto your character sheet (in theory). Power stamina also aren&rsquo;t noted in the character backgrounds section, and it&rsquo;s inconvenient to flip through the book to find them. It&rsquo;s also easier if there&rsquo;s a sheet everyone can pass around instead of the one device with the PDF.</p>
+
+<figure class="webp" ><picture>
+          <source srcset="/images/longshot-city-quick-reference_hu7ca8f0ca4b157bb21a41ff6db8c085f4_511366_1349x1044_fit_q75_h2_box_3.webp" type="image/webp">
+          <source srcset="/images/longshot-city-quick-reference_hu7ca8f0ca4b157bb21a41ff6db8c085f4_511366_1349x1044_fit_q75_bgffffff_box_3.jpg" type="image/jpeg">
+          <img src="/images/longshot-city-quick-reference_hu7ca8f0ca4b157bb21a41ff6db8c085f4_511366_1349x1044_fit_q75_h2_box_3.webp"alt="Longshot City character sheet"  width="1349"  height="1044"  loading="lazy" />
+        </picture></figure>
+<p>Nothing tricky for these, I store the actual table contents in <code>array</code>s to make them easier to move around &ndash; they&rsquo;re quite long when the code formatter forces each number onto its own line. Just your standard comma separated values.</p>
+<p>I need to do another editing pass or two on the rules reference &ndash; probably rip out the entire initiative section (&ldquo;let the GM tell you when it&rsquo;s your turn, each combat round is one two-page spread long&rdquo;) to make room for more examples.</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>Runic Magic</title>
+			<link>https://windowdump.github.io/posts/runic-magic/</link>
+			<pubDate>Sat, 26 Apr 2025 16:36:39 -0400</pubDate>
+			
+			<guid>https://windowdump.github.io/posts/runic-magic/</guid>
+			<description><![CDATA[A set of runes on printable cards, kinda like Ultima, with suggested rules for fantasy TTRPGS (and FIST).]]></description>
+			<content type="html"><![CDATA[
+<figure class="webp" ><picture>
+          <source srcset="/images/runic-magic_hu5e59f8b9a2dbbaddd0b1f77fc9784710_117412_1248x943_fit_q75_h2_box_3.webp" type="image/webp">
+          <source srcset="/images/runic-magic_hu5e59f8b9a2dbbaddd0b1f77fc9784710_117412_1248x943_fit_q75_bgffffff_box_3.jpg" type="image/jpeg">
+          <img src="/images/runic-magic_hu5e59f8b9a2dbbaddd0b1f77fc9784710_117412_1248x943_fit_q75_h2_box_3.webp"alt="Runic Magic preview"  width="1248"  height="943"  loading="lazy" />
+        </picture></figure>
+<ul>
+<li><a href="https://github.com/WindowDump/typst-ttrpg/blob/main/runic-magic.pdf">Runic Magic - PDF</a></li>
+<li><a href="https://github.com/WindowDump/typst-ttrpg/blob/main/runic-magic.typ">Source code (Typst)</a></li>
+</ul>
+<p><a href="https://typst.app/project/rGATRmPoeLmBhpPKvWCDni">Original text by skander.</a> Shout out to <a href="https://amag111.itch.io">skander&rsquo;s itch</a>, get <a href="https://amag111.itch.io/runic-magic-for-ttrpgs">his version of this document</a> to double your runes.</p>
+<p>Lightweight interpretive magic system. Uses the <a href="https://wiki.ultimacodex.com/wiki/Incantation">Runes</a> from the classic <em>Ultima</em> CRPG series. These are the building blocks of <a href="https://wiki.ultimacodex.com/wiki/Britannian_magic">Britiannian magic</a>: each spell is made of one or more runes, and casting them in some games requires you to type in the runes for the spell every time you cast it.</p>
+<p>Spells are legally-distinct <em>D&amp;D</em> types, as was the style at the time. The runes to cast them are thematic, with more powerful spells requiring multiple runes. For a few examples, Light is <em><code>In Lor</code></em> &ndash; &ldquo;create light&rdquo;, Fireball is <em><code>Vas Flam Hur</code></em> &ndash; &ldquo;great flame wind&rdquo;, and Resurrect is <em><code>In Mani Corp</code></em> &ndash; &ldquo;create life death.&rdquo; Poke around the <a href="https://wiki.ultimacodex.com/wiki/Category:Ultima_VII_spells">Ultima VII spell list</a> for more.</p>
+<p>Because I could fit it, this document has instructions on how to use it as a FIST trait. For completeness&hellip;</p>
+<h2 id="runic-magic">RUNIC MAGIC</h2>
+<p>You are a practitioner of a magical art that uses runes as its fundamental unit. These 24 runes can be represented as cards on <a href="https://github.com/WindowDump/typst-ttrpg/blob/main/runic-magic.pdf">the second page of this document</a>. Assemble them into a deck. Combine runes to form a reasonable spell. Choose one or more runes and roll <strong>2D6 + modifiers</strong> to cast a spell, based on the runes used and any modifiers (see below).</p>
+<p>By default, a spell takes 30-60 seconds to cast, lasts for a single use or with active concentration, and affects you or someone you touch in a noticeable way. Once used, runes lose power until you draw runes again.</p>
+<ul>
+<li>Add <strong>+ 1</strong> to the roll for each:
+<ul>
+<li>Use more than 2 runes in the spell</li>
+<li>Sacrifice 1D6 HP</li>
+<li>Take much longer</li>
+</ul>
+</li>
+<li>Subtract <strong>- 1</strong> from the roll for each:
+<ul>
+<li>Increase range</li>
+<li>Affect group or area</li>
+<li>Cast instantly</li>
+<li>Subtle effect and casting</li>
+<li>Long-lasting</li>
+</ul>
+</li>
+</ul>
+<p>When you have time for meditation and connection with the sources of your power, return all your runes to the deck, shuffle, and draw <strong>2D6 + your number of traits</strong> runes. You can typically do this between missions, ask the referee if it&rsquo;s possible at the rendezvous point or elsewhere.</p>
+<ul>
+<li>a bag of runes</li>
+<li>+1 MAX HP</li>
+</ul>
+
+    <aside class="admonition warning">
+        <div class="admonition-title">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle">
+      <circle cx="12" cy="12" r="10"></circle>
+      <line x1="12" y1="8" x2="12" y2="12"></line>
+      <line x1="12" y1="16" x2="12.01" y2="16"></line>
+   </svg></div>Referee Note</div>
+        <div class="admonition-content">I did not playtest the number of runes drawn, have fun!</div>
+    </aside>
+<h1 id="source-code-discussion">Source code discussion</h1>
+<p>This was written in <a href="https://typst.app">Typst</a>, and I learned a few tricks while making this. In fact, I made this because I got inspired to try out these tricks.</p>
+<h2 id="font-choice">Font choice</h2>
+<p><a href="https://psb1558.github.io/Elstob-font/">Elstob</a>, for that medievalist feeling. It supports runic glyphs via stylistic alternatives, which you can access with CSS.</p>
+<h2 id="content-organization">Content organization</h2>
+<p>Runes are stored as an array of dictionaries:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">runes</span> <span class="o">=</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nx">glyph</span><span class="o">:</span> <span class="s2">&#34;ᚫ&#34;</span><span class="p">,</span> <span class="nx">name</span><span class="o">:</span> <span class="s2">&#34;An&#34;</span><span class="p">,</span> <span class="nx">meaning</span><span class="o">:</span> <span class="s2">&#34;Negate&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nx">glyph</span><span class="o">:</span> <span class="s2">&#34;ᛒ&#34;</span><span class="p">,</span> <span class="nx">name</span><span class="o">:</span> <span class="s2">&#34;Bet&#34;</span><span class="p">,</span> <span class="nx">meaning</span><span class="o">:</span> <span class="s2">&#34;Small&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nx">glyph</span><span class="o">:</span> <span class="s2">&#34;ᚳ&#34;</span><span class="p">,</span> <span class="nx">name</span><span class="o">:</span> <span class="s2">&#34;Corp&#34;</span><span class="p">,</span> <span class="nx">meaning</span><span class="o">:</span> <span class="s2">&#34;Death&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">  <span class="p">...</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span></code></pre></div><p>This lets you separate content and its presentation (very web 2.0). I took advantage of this to create two different grids, one for reference (on the first page), one for printing (on the second page).</p>
+<h2 id="building-the-grid">Building the grid</h2>
+<p>With the <code>runes</code> array, we use the <a href="https://typst.app/docs/reference/foundations/array/#definitions-map"><code>array.map</code></a> method to transform the dictionaries into content, in this case <code>grid</code>&rsquo;s. Because <code>map</code> return an array, we need to spread it to pass the content into a containing <code>grid</code>.</p>
+
+    <aside class="admonition failure">
+        <div class="admonition-title">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle">
+      <circle cx="12" cy="12" r="10"></circle>
+      <line x1="15" y1="9" x2="9" y2="15"></line>
+      <line x1="9" y1="9" x2="15" y2="15"></line>
+   </svg></div>Expected content, found array.</div>
+        <div class="admonition-content"><p>Many functions like <code>grid</code> expect <code>content</code>, so this doesn&rsquo;t work.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">grid</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">columns</span><span class="o">:</span> <span class="p">(</span><span class="mi">1</span><span class="nx">fr</span><span class="p">,)</span> <span class="o">*</span> <span class="mi">6</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">runes</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">rune</span> <span class="p">=&gt;</span> <span class="nx">grid</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">rune</span><span class="p">.</span><span class="nx">name</span><span class="p">,</span> <span class="nx">rune</span><span class="p">.</span><span class="nx">glyph</span><span class="p">,</span> <span class="nx">rune</span><span class="p">.</span><span class="nx">meaning</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">)),</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span></code></pre></div></div>
+    </aside>
+
+    <aside class="admonition success">
+        <div class="admonition-title">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-circle">
+      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+   </svg></div>Spread the array!</div>
+        <div class="admonition-content"><p>The <code>..</code> spread operator returns the contents of the array, our desired <code>content</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">grid</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">columns</span><span class="o">:</span> <span class="p">(</span><span class="mi">1</span><span class="nx">fr</span><span class="p">,)</span> <span class="o">*</span> <span class="mi">6</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">..</span><span class="nx">runes</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">rune</span> <span class="p">=&gt;</span> <span class="nx">grid</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">rune</span><span class="p">.</span><span class="nx">name</span><span class="p">,</span> <span class="nx">rune</span><span class="p">.</span><span class="nx">glyph</span><span class="p">,</span> <span class="nx">rune</span><span class="p">.</span><span class="nx">meaning</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">)),</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span></code></pre></div></div>
+    </aside>
+]]></content>
+		</item>
 		
 		<item>
 			<title>WoDu Remix Character Sheet</title>
@@ -30,10 +227,10 @@
 <li><a href="../../stuff/wodu-remix-sheet-halfletter-flare.pdf">flare, color - PDF</a></li>
 <li><a href="../../stuff/fist-operative-handbook.typ">Source Code (Typst)</a></li>
 </ul>
-<p>Branching off from <em>FIST</em>, I found the neat <a href="https://itch.io/c/3165867/pbta-osr-synthesis">PbtA + OSR collection on Itch</a> that contains a bunch of games inspired by <a href="https://johnharper.itch.io/world-of-dungeons">World of Dungeons</a> (<em>WoDu</em><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>), the <em>Dungeon World</em> pre-order bonus that&rsquo;s basically <em>B/X D&amp;D</em> but you do the 2d6 thing from <em>Apocalypse World</em> instead of a d20. Among the collection is <a href="https://katamoiran.itch.io/remix">Remix</a> (<em>WoDu Remix</em>) which neatly splits the difference between the OSR, storygames, and <em>5e</em>, and gets me excited about it every time I crack it open.</p>
-<p>After finishing up the <em>FIST</em> character sheet, I decided to try a <em>WoDu Remix</em> sheet since the two games are similar. Taking the original <em>WoDu</em> sheet as inspiration, I added the new skill list, provided more room for special abilities, and added the extra stats <em>WoDu Remix</em> has (heritage, bonus damage, first aid, debilities).</p>
-<p>During the process I realized I could build a sheet out of negative space on top of a colored background, bypassing Typst&rsquo;s lack of mask support. This let me make some fairly striking designs with gradients on the borders. Typst comes loaded with a bunch of cool data visualization gradients (<code>flare</code> is a standout) and it&rsquo;s easy to make your own.</p>
-<p>I made a few different versions of the sheet. First up is classic <em>black &amp; white</em>, which would probably look good out of a laser printer.</p>
+<p>Branching off from <em>FIST</em>, I found the neat <a href="https://itch.io/c/3165867/pbta-osr-synthesis">PbtA + OSR collection on Itch</a> that contains a bunch of games inspired by <a href="https://johnharper.itch.io/world-of-dungeons">World of Dungeons</a> (<em>WoDu</em><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>), the <em>Dungeon World</em> pre-order bonus that&rsquo;s basically <em>B/X D&amp;D</em> but you do the 2d6 thing from <em>Apocalypse World</em> instead of a d20. Among the collection is <a href="https://katamoiran.itch.io/remix">Remix</a> (<em>WoDu Remix</em>) which neatly splits the difference between the OSR, storygames, and <em>5e</em>, and makes me excited every time I crack it open.</p>
+<p>After finishing up the <em>FIST</em> character sheet and understanding the basics of <a href="https://typst.app/">Typst</a>, I decided to try a <em>WoDu Remix</em> sheet since the two games are similar. Taking the original <em>WoDu</em> sheet as inspiration, I added the new skill list, provided more room for special abilities, and included the extra stats and fields (heritage, bonus damage, first aid, debilities).</p>
+<p>During the process I realized I could build a sheet out of negative space on top of a colored background, working around Typst&rsquo;s lack of masking or clipping support. This let me make some fairly striking designs with gradients on the borders. Typst comes loaded with a bunch of cool data visualization gradients (<code>flare</code> is a standout) and it&rsquo;s easy to make your own.</p>
+<p>I made a few different versions of the sheet. First up is classic <em>black &amp; white</em>, which would look good out of a laser printer.</p>
 
 <figure class="webp" ><a href="../../stuff/wodu-remix-sheet-halfletter-bw.pdf"><picture>
           <source srcset="/images/wodu-remix-sheet-halfletter-bw_hud2aa8a4e3e9d3645c6ca8d0ac2f607ba_158518_1860x1426_fit_q75_h2_box_3.webp" type="image/webp">
@@ -79,7 +276,7 @@
 			<pubDate>Sun, 06 Oct 2024 12:52:47 -0400</pubDate>
 			
 			<guid>https://windowdump.github.io/posts/fist-operative-handbook/</guid>
-			<description><![CDATA[A zine-style half-letter character sheet and rules summary for FIST, a paranormal mercenary TTRPG]]></description>
+			<description><![CDATA[A zine-style half-letter character sheet and rules summary for FIST, a paranormal mercenary TTRPG.]]></description>
 			<content type="html"><![CDATA[
 <figure class="webp" ><picture>
           <source srcset="/images/fist-handbook_hu7838f2a5e1a46772b1cd164ed9dd9086_301065_1269x1006_fit_q75_h2_box_3.webp" type="image/webp">
@@ -108,7 +305,8 @@
 			<description><![CDATA[test post please ignore]]></description>
 			<content type="html"><![CDATA[<h2 id="this-is-a-test-post">This is a test post</h2>
 <p>Hello. This is a post that I might mark as a draft in the near future. It&rsquo;s a testing post that demonstrates various features of this blog and the styles defined for it. I care way too much about this stuff, but I&rsquo;m getting it out of the way so I don&rsquo;t get distracted by it later (I will get distracted by layout and formatting stuff later).</p>
-<p>A lot of this website is me playing with <a href="https://psb1558.github.io/Elstob-font/">Elstob</a>, a font based on one used by the Oxford University Press in the 17th century. With the power of modern technology it graces your eyeballs once again, except this time with an anachronistic grade axis. It&rsquo;s an old style font, so it&rsquo;s designed for black ink on white paper, but maybe white pixels on dark pixels will be good too.</p>
+<p><del>A lot of this website is me playing with <a href="https://psb1558.github.io/Elstob-font/">Elstob</a>, a font based on one used by the Oxford University Press in the 17th century. With the power of modern technology it graces your eyeballs once again, except this time with an anachronistic grade axis. It&rsquo;s an old style font, so it&rsquo;s designed for black ink on white paper, but maybe white pixels on dark pixels will be good too.</del></p>
+<p>Just kidding, decided to swap over to <a href="https://github.com/adobe-fonts/source-serif">Source Serif 4</a> and <a href="https://github.com/indestructible-type/Drafting">Drafting* Mono</a>.</p>
 <h3 id="hot-new-features">Hot New Features</h3>
 <p>I added these because Elstob supports them. They&rsquo;re implemented as Hugo shortcodes.</p>
 <ul>
@@ -118,6 +316,7 @@
 <ul>
 <li>
 <span style="font-feature-settings: 'c2sc', 'ss02'">It&rsquo;s kinda like that movie, <em>The Lord of the Rings</em>.</span></li>
+<li>source serif: c2sc works! insular doesn&rsquo;t</li>
 </ul>
 </li>
 </ul>
@@ -130,6 +329,7 @@
 <span style="font-feature-settings: 'ss13'">runic probabli makes more sense than english tbkh</span></li>
 <li>
 <span style="font-feature-settings: 'ss13'">we <em>ultima</em> now</span></li>
+<li>maybe not anymore</li>
 </ul>
 </li>
 <li>
@@ -165,6 +365,10 @@
 <p>Theme is based on <a href="https://1bl4z3r.github.io/hermit-V2/en/">Hermit V2</a>. I&rsquo;ve done a lot of hacking to it because I&rsquo;ve read <a href="https://practicaltypography.com">Butterick&rsquo;s Practical Typography</a>.</p>
 <p>Visit the <a href="https://gohugo.io">Hugo</a> website!</p>
 <h1 id="level-1-testing">Level 1 testing</h1>
+<p>Butterick recommends 45 to 90 characters per line. Here are lines of 26, 52, and 78 characters.</p>
+<p>abcde fghij klmno pqrst uvwxyz</p>
+<p>abcde fghij klmno pqrst uvwxyz abcde fghij klmno pqrst uvwxyz</p>
+<p>abcde fghij klmno pqrst uvwxyz abcde fghij klmno pqrst uvwxyz abcde fghij klmno pqrst uvwxyz</p>
 <p>y&rsquo;all like oldstyle numerals? 1234567890</p>
 <p>Personally I have a soft spot for those suckers. We see lining numerals everywhere, every day - they&rsquo;ve been the default for so long. Same with tabular numerals. If you&rsquo;re making a chart or a table, or working with monospace fonts, tabular lining numerals are the way to go, and they&rsquo;ve become so commonplace they don&rsquo;t look odd when you see them in text. So they&rsquo;re a reasonable default. But I&rsquo;m not using the default settings! I want to go wild and so something you haven&rsquo;t seen before.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Hello World! 1234567890&#34;</span><span class="p">)</span>
@@ -207,8 +411,7 @@
       <line x1="21" y1="12" x2="23" y2="12"></line>
       <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
       <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-   </svg></div><b>Pro Tip</b>
-        </div>
+   </svg></div>Pro Tip</div>
         <div class="admonition-content">Shoot the Cyberdemon with rockets until it dies.</div>
     </aside>
 
@@ -219,8 +422,7 @@
       <circle cx="12" cy="12" r="10"></circle>
       <line x1="15" y1="9" x2="9" y2="15"></line>
       <line x1="9" y1="9" x2="15" y2="15"></line>
-   </svg></div><b>Skill issues</b>
-        </div>
+   </svg></div>Skill issues</div>
         <div class="admonition-content">Don&rsquo;t walk into the Cyberdemon&rsquo;s rockets or you&rsquo;ll die.</div>
     </aside>
 <hr>
@@ -228,14 +430,14 @@
 <p><strong>strong</strong>, <em>emphasis</em>, <em><strong>strong and emphasis</strong></em>,<code>code</code>, <del>strikethrough</del>, &#x1f602;🤣, $\LaTeX$<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>, ==highlight==, <a href="https://example.com">Link</a>, and image:</p>
 <p><img src="https://picsum.photos/600/400/?random" alt="img"></p>
 <p>Images can also be implemented via figure shortcode. It extends in-built hugo shortcode to convert images to webp format.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">{</span> <span class="p">{&lt;</span> <span class="nx">figure</span> <span class="nx">src</span><span class="p">=</span><span class="s">&#34;images/928-600x400.jpg&#34;</span> <span class="nx">title</span><span class="p">=</span><span class="s">&#34;An elephant at sunset&#34;</span> <span class="nx">alt</span><span class="p">=</span><span class="s">&#34;A WEBP converted image&#34;</span> <span class="nx">caption</span><span class="p">=</span><span class="s">&#34;A WEBP converted image&#34;</span> <span class="nx">class</span><span class="p">=</span><span class="s">&#34;webp&#34;</span> <span class="nx">loading</span><span class="p">=</span><span class="s">&#34;lazy&#34;</span> <span class="p">&gt;}</span> <span class="p">}</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">{</span> <span class="p">{&lt;</span> <span class="nx">figure</span> <span class="nx">src</span><span class="p">=</span><span class="s">&#34;images/wodu-remix-sheet-halfletter-flare.png&#34;</span> <span class="nx">title</span><span class="p">=</span><span class="s">&#34;WoDu Character Sheet, flare version&#34;</span> <span class="nx">alt</span><span class="p">=</span><span class="s">&#34;A WEBP converted image&#34;</span> <span class="nx">caption</span><span class="p">=</span><span class="s">&#34;A WEBP converted image&#34;</span> <span class="nx">class</span><span class="p">=</span><span class="s">&#34;webp&#34;</span> <span class="nx">loading</span><span class="p">=</span><span class="s">&#34;lazy&#34;</span> <span class="p">&gt;}</span> <span class="p">}</span>
 </span></span></code></pre></div>
 <figure class="webp" ><picture>
-          <source srcset="/images/928-600x400_hucbc855f725a43c27f888e6c1638ee550_14211_600x400_fit_q75_h2_box.webp" type="image/webp">
-          <source srcset="/images/928-600x400_hucbc855f725a43c27f888e6c1638ee550_14211_600x400_fit_q75_box.jpg" type="image/jpeg">
-          <img src="/images/928-600x400_hucbc855f725a43c27f888e6c1638ee550_14211_600x400_fit_q75_h2_box.webp"alt="A WEBP converted image"  width="600"  height="400"  loading="lazy" />
+          <source srcset="/images/wodu-remix-sheet-halfletter-flare_huc8a94e1ef92101a27bcbdc4167bd8e7f_366276_1860x1426_fit_q75_h2_box_3.webp" type="image/webp">
+          <source srcset="/images/wodu-remix-sheet-halfletter-flare_huc8a94e1ef92101a27bcbdc4167bd8e7f_366276_1860x1426_fit_q75_bgffffff_box_3.jpg" type="image/jpeg">
+          <img src="/images/wodu-remix-sheet-halfletter-flare_huc8a94e1ef92101a27bcbdc4167bd8e7f_366276_1860x1426_fit_q75_h2_box_3.webp"alt="A WEBP converted image"  width="1860"  height="1426"  loading="lazy" />
         </picture><figcaption>
-            <h4>An elephant at sunset</h4><p>A WEBP converted image</p>
+            <h4>WoDu Character Sheet, flare version</h4><p>A WEBP converted image</p>
           </figcaption></figure>
 <p>Yes, and now here&rsquo;s some more stuff after the figure.</p>
 <hr>

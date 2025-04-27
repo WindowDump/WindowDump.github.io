@@ -7,14 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>CC BY-SA 4.0</copyright>
-    <lastBuildDate>Sun, 06 Oct 2024 12:57:47 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 26 Apr 2025 16:47:32 -0400</lastBuildDate>
     <atom:link href="https://windowdump.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Longshot City Character Sheet</title>
+      <link>https://windowdump.github.io/posts/longshot-city-character-sheet/</link>
+      <pubDate>Sat, 26 Apr 2025 16:47:32 -0400</pubDate>
+      <guid>https://windowdump.github.io/posts/longshot-city-character-sheet/</guid>
+      <description>Longshot City character sheet and quick reference - PDF Source code (Typst) Link to Longshot City.&#xA;The one time I ran this game I had a time-traveling ghost possess a mouse and hack into Rocketman&amp;rsquo;s computer.&#xA;Source code discussion This is the first horizontal full-page character sheet I made. I made it in Typst.&#xA;Font choice I went with the Patrick Hand SC font as an easy option for a handwritten font.</description>
+    </item>
+    <item>
+      <title>Runic Magic</title>
+      <link>https://windowdump.github.io/posts/runic-magic/</link>
+      <pubDate>Sat, 26 Apr 2025 16:36:39 -0400</pubDate>
+      <guid>https://windowdump.github.io/posts/runic-magic/</guid>
+      <description>Runic Magic - PDF Source code (Typst) Original text by skander. Shout out to skander&amp;rsquo;s itch, get his version of this document to double your runes.&#xA;Lightweight interpretive magic system. Uses the Runes from the classic Ultima CRPG series. These are the building blocks of Britiannian magic: each spell is made of one or more runes, and casting them in some games requires you to type in the runes for the spell every time you cast it.</description>
+    </item>
     <item>
       <title>WoDu Remix Character Sheet</title>
       <link>https://windowdump.github.io/posts/wodu-remix-character-sheet/</link>
       <pubDate>Sun, 06 Oct 2024 12:57:47 -0400</pubDate>
       <guid>https://windowdump.github.io/posts/wodu-remix-character-sheet/</guid>
-      <description>flare gradient version&#xA;Black &amp;amp; White - PDF Low Ink, Single Contrast - PDF flare, color - PDF Source Code (Typst) Branching off from FIST, I found the neat PbtA + OSR collection on Itch that contains a bunch of games inspired by World of Dungeons (WoDu1), the Dungeon World pre-order bonus that&amp;rsquo;s basically B/X D&amp;amp;D but you do the 2d6 thing from Apocalypse World instead of a d20. Among the collection is Remix (WoDu Remix) which neatly splits the difference between the OSR, storygames, and 5e, and gets me excited about it every time I crack it open.</description>
+      <description>flare gradient version&#xA;Black &amp;amp; White - PDF Low Ink, Single Contrast - PDF flare, color - PDF Source Code (Typst) Branching off from FIST, I found the neat PbtA + OSR collection on Itch that contains a bunch of games inspired by World of Dungeons (WoDu1), the Dungeon World pre-order bonus that&amp;rsquo;s basically B/X D&amp;amp;D but you do the 2d6 thing from Apocalypse World instead of a d20. Among the collection is Remix (WoDu Remix) which neatly splits the difference between the OSR, storygames, and 5e, and makes me excited every time I crack it open.</description>
     </item>
     <item>
       <title>FIST Operative Handbook</title>
@@ -25,10 +39,10 @@
     </item>
     <item>
       <title>Stuff I made</title>
-      <link>https://windowdump.github.io/files/</link>
+      <link>https://windowdump.github.io/stuff/</link>
       <pubDate>Fri, 04 Oct 2024 13:09:37 -0400</pubDate>
-      <guid>https://windowdump.github.io/files/</guid>
-      <description>Here&amp;rsquo;s some game stuff I made. Source is provided so you can tweak or hack them to your liking. Change fonts, change colors, tweak the words - make it your own! Or print them out and start playing.&#xA;FIST Stuff for FIST - Freelance Infantry Strike Team, a paranormal mercenary TTRPG.&#xA;Operative Handbook Half-letter character sheet, plus character creation rules and a rules reference. Great for new players - read the whole thing, then make a character and fold it in half to maximize table space.</description>
+      <guid>https://windowdump.github.io/stuff/</guid>
+      <description>Here&amp;rsquo;s some game stuff I made. Source is provided so you can tweak or hack them to your liking. Change fonts, change colors, tweak the words, build a game on top of it. Or print them out and start playing.&#xA;FIST FIST - Freelance Infantry Strike Team, a paranormal mercenary TTRPG.&#xA;Operative Handbook Half-letter character sheet, plus character creation rules and a rules reference. Great for new players - read the whole thing, then make a character and fold it in half to maximize table space.</description>
     </item>
     <item>
       <title>Hello World!</title>
