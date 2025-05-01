@@ -7,14 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>CC BY-SA 4.0</copyright>
-    <lastBuildDate>Sat, 26 Apr 2025 16:47:32 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 27 Apr 2025 11:06:41 -0400</lastBuildDate>
     <atom:link href="https://windowdump.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Disks &amp; Daemons</title>
+      <link>https://windowdump.github.io/posts/disks-n-daemons/</link>
+      <pubDate>Sun, 27 Apr 2025 11:06:41 -0400</pubDate>
+      <guid>https://windowdump.github.io/posts/disks-n-daemons/</guid>
+      <description>Itch link Disks &amp;amp; Daemons - Screen Version PDF Disks &amp;amp; Daemons - Print Version PDF Disks &amp;amp; Daemons - Singles PDF Source code (Typst) Submission for FIST: JAM OPS V.&#xA;It&amp;rsquo;s Rogue, Hackers: Heroes of the Computer Revolution, and TRON in a blender with a splash of anti-canon worldbuilding and two splashes of OSR procedures. Dungeon procedures and procedural dungeons. Other key influences include The Hacker Jargon File and a smattering of other media where you go into a computer network.</description>
+    </item>
     <item>
       <title>Longshot City Character Sheet</title>
       <link>https://windowdump.github.io/posts/longshot-city-character-sheet/</link>
       <pubDate>Sat, 26 Apr 2025 16:47:32 -0400</pubDate>
       <guid>https://windowdump.github.io/posts/longshot-city-character-sheet/</guid>
-      <description>Longshot City character sheet and quick reference - PDF Source code (Typst) Link to Longshot City.&#xA;The one time I ran this game I had a time-traveling ghost possess a mouse and hack into Rocketman&amp;rsquo;s computer.&#xA;Source code discussion This is the first horizontal full-page character sheet I made. I made it in Typst.&#xA;Font choice I went with the Patrick Hand SC font as an easy option for a handwritten font.</description>
+      <description>Longshot City character sheet and quick reference - PDF Source code (Typst) Link to Longshot City.&#xA;The one time I ran this game I had a time-traveling ghost possess an influencer live-streaming a self-replicating robot outbreak so they could use their psychic powers.&#xA;Source code discussion This is the first horizontal full-page character sheet I made. I used Typst.&#xA;Font choice I went with the Patrick Hand SC font as an easy option for a handwritten font.</description>
     </item>
     <item>
       <title>Runic Magic</title>
@@ -42,7 +49,7 @@
       <link>https://windowdump.github.io/stuff/</link>
       <pubDate>Fri, 04 Oct 2024 13:09:37 -0400</pubDate>
       <guid>https://windowdump.github.io/stuff/</guid>
-      <description>Here&amp;rsquo;s some game stuff I made. Source is provided so you can tweak or hack them to your liking. Change fonts, change colors, tweak the words, build a game on top of it. Or print them out and start playing.&#xA;FIST FIST - Freelance Infantry Strike Team, a paranormal mercenary TTRPG.&#xA;Operative Handbook Half-letter character sheet, plus character creation rules and a rules reference. Great for new players - read the whole thing, then make a character and fold it in half to maximize table space.</description>
+      <description>Here&amp;rsquo;s some game stuff I made. Source is provided so you can tweak or hack them to your liking. Change fonts, change colors, tweak the words, build a game on top of it. Or print them out and start playing.&#xA;FIST FIST - Freelance Infantry Strike Team, a paranormal mercenary hack of Offworlders. Metal Gear Solid meets The A-Team at John Harper&amp;rsquo;s table.&#xA;Operative Handbook Blog post&#xA;Half-letter character sheet, plus character creation rules and a rules reference.</description>
     </item>
     <item>
       <title>Hello World!</title>

@@ -16,7 +16,7 @@
 <meta itemprop="name" content="Longshot City Character Sheet">
 <meta itemprop="description" content="Character sheet and quick reference sheet for Longshot City, the superhero TTRPG built on Troika!."><meta itemprop="datePublished" content="2025-04-26T16:47:32-04:00" />
 <meta itemprop="dateModified" content="2025-04-26T16:47:32-04:00" />
-<meta itemprop="wordCount" content="436">
+<meta itemprop="wordCount" content="519">
 <meta itemprop="keywords" content="Longshot City,Troika!,character sheet,Typst," /><meta property="og:title" content="Longshot City Character Sheet" />
 <meta property="og:description" content="Character sheet and quick reference sheet for Longshot City, the superhero TTRPG built on Troika!." />
 <meta property="og:type" content="article" />
@@ -30,7 +30,7 @@
 <meta name="twitter:site" content="Tabletop Ergonomics">
 <meta name="twitter:creator" content="Window Dump">
 <title>Longshot City Character Sheet | Tabletop Ergonomics</title>
-<link rel="stylesheet dns-prefetch preconnect preload prefetch" as="style" href="https://windowdump.github.io/css/style.min.100b5fbf07f242a669be3a84fc6e58cf620eb43eff792be359c54b73ad7c73d7.css" integrity="sha256-EAtfvwfyQqZpvjqE/G5Yz2IOtD7/eSvjWcVLc618c9c=" crossorigin="anonymous">
+<link rel="stylesheet dns-prefetch preconnect preload prefetch" as="style" href="https://windowdump.github.io/css/style.min.aa5b9cc68d457d8f7d3e7199adea5f7827991714faeedebebd847c2ef0e7f2a6.css" integrity="sha256-qlucxo1FfY99PnGZrepfeCeZFxT67t6+vYR8LvDn8qY=" crossorigin="anonymous">
 	</head>
 <body id="page">
 	<header id="site-header" class="animated slideInUp">
@@ -113,7 +113,7 @@
       <line x1="16" y1="13" x2="8" y2="13"></line>
       <line x1="16" y1="17" x2="8" y2="17"></line>
       <polyline points="10 9 9 9 8 9"></polyline>
-   </svg>436 words</p>
+   </svg>519 words</p>
 </div>
 			<hr class="post-end">
 			<div class="content">
@@ -128,15 +128,16 @@
 <li><a href="https://github.com/WindowDump/typst-ttrpg/blob/main/longshot-city.typ">Source code (Typst)</a></li>
 </ul>
 <p>Link to <a href="https://melsonian-arts-council.itch.io/longshot-city">Longshot City</a>.</p>
-<p>The one time I ran this game I had a time-traveling ghost possess a mouse and hack into Rocketman&rsquo;s computer.</p>
+<p>The one time I ran this game I had a time-traveling ghost possess an influencer live-streaming a self-replicating robot outbreak so they could use their psychic powers.</p>
 <h1 id="source-code-discussion">Source code discussion<a href="#source-code-discussion" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h1>
-<p>This is the first horizontal full-page character sheet I made. I made it in <a href="https://typst.app">Typst</a>.</p>
+<p>This is the first horizontal full-page character sheet I made. I used <a href="https://typst.app">Typst</a>.</p>
 <h2 id="font-choice">Font choice<a href="#font-choice" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 <p>I went with the <a href="https://fonts.google.com/specimen/Patrick+Hand+SC">Patrick Hand SC</a> font as an easy option for a handwritten font. Kinda like comics. For numbers I used <a href="https://www.behance.net/gallery/86895479/Comic-Helvetic-(Lat-Cyr)">Comic Helvetic</a>, a blursed cross between Comic Sans and Helvetica. Tables use <a href="https://github.com/huertatipografica/Alegreya">Alegreya</a>.</p>
 <h2 id="fun-with-layout">Fun with layout<a href="#fun-with-layout" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
-<p>I started by making a loose facsimile of the official sheet, with the grid evenly split down the center. After a while, I remembered I didn&rsquo;t need to fold this, so I messed around with the grid widths. This let me give the skills &amp; powers list and attacks list a bit more room to breathe.</p>
+<p>I started with a loose facsimile of the official sheet, with the grid evenly split down the center. After a while, I remembered I didn&rsquo;t need to fold the sheet or cut it in half, so I messed around with the grid&rsquo;s column widths, expressed as fractional units (<code>fr</code>). Typst made it easy to adjust the weights. This let me give the skills &amp; powers list and attacks list more room to breathe.</p>
 <h2 id="content-from-ranges">Content from ranges<a href="#content-from-ranges" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
-<p>In the <a href="content/posts/runic-magic.md">Runic Magic</a> doc, I used <code>array.map</code> to create content from an array of dictionaries. In this one, I use a <code>for</code> loop over a <code>range()</code>, each loop returning a 1-length <code>array</code> which are then combined into a single <code>array</code>, which is finally spread to make numbered copies of lines.</p>
+<p>In the <a href="content/posts/runic-magic.md">Runic Magic</a> project, I used <code>array.map</code> to create content from an array of dictionaries. For this project, I use a <code>for</code> loop over a <code>range()</code>. This lets me easily work with numbered content, such as the labels on the Attacks and Inventory sections of the sheet.</p>
+<p>Each iteration of the loop returns a 1-length <code>array</code>, which Typst combines into a single array that I then spread to populate the containing grid.</p>
 
     <aside class="admonition warning">
         <div class="admonition-title">
@@ -146,13 +147,12 @@
       <line x1="12" y1="8" x2="12" y2="12"></line>
       <line x1="12" y1="16" x2="12.01" y2="16"></line>
    </svg></div>Combined content</div>
-        <div class="admonition-content"><p>If your <code>for</code> loop returns <code>content</code>, it will all be merged into a single <code>content</code> object.</p>
+        <div class="admonition-content"><p>If your loop returns <code>content</code>, it will all be merged into a single <code>content</code> object:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">grid</span><span class="p">(</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">columns</span><span class="o">:</span> <span class="mi">7</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">  <span class="k">for</span> <span class="nx">x</span> <span class="k">in</span> <span class="nx">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">str</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">  <span class="p">},</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">ab_label</span><span class="p">[</span><span class="mi">7</span><span class="o">+</span><span class="p">],</span>
 </span></span><span class="line"><span class="cl"><span class="p">)</span>
 </span></span></code></pre></div><p>This loop produces a single <code>content</code> object: <code>[123456]</code>.</p>
 </div>
@@ -171,18 +171,18 @@
       <line x1="21" y1="12" x2="23" y2="12"></line>
       <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
       <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-   </svg></div>Spreading for loop</div>
-        <div class="admonition-content"><p>Return a 1-length array to have the <code>for</code> loop merge them all into a single <code>array</code>.</p>
+   </svg></div>Spreading a for loop</div>
+        <div class="admonition-content"><p>Return a 1-length array to have the loop merge them all into a single array:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">grid</span><span class="p">(</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">columns</span><span class="o">:</span> <span class="mi">7</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">  <span class="p">..</span><span class="k">for</span> <span class="nx">x</span> <span class="k">in</span> <span class="nx">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nx">str</span><span class="p">(</span><span class="nx">x</span><span class="p">),)</span>
 </span></span><span class="line"><span class="cl">  <span class="p">},</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">ab_label</span><span class="p">[</span><span class="mi">7</span><span class="o">+</span><span class="p">],</span>
 </span></span><span class="line"><span class="cl"><span class="p">)</span>
-</span></span></code></pre></div><p>Spread the result and the <code>grid</code> will be populated as desired.</p>
+</span></span></code></pre></div><p>Spreading the loop places 6 items in the <code>grid</code>: <code>[1], [2], [3], [4], [5], [6]</code>.</p>
 </div>
     </aside>
+<p>I didn&rsquo;t realize you could use the <code>*</code> operator to make copies of content, so there&rsquo;s a few spots where I use this method even though I don&rsquo;t need to do anything with the number.</p>
 <h2 id="quick-reference-sheet">Quick reference sheet<a href="#quick-reference-sheet" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 <p>An exercise in information density. <em>Longshot City</em> uses per-weapon lookup tables for damage, which you copy onto your character sheet (in theory). Power stamina also aren&rsquo;t noted in the character backgrounds section, and it&rsquo;s inconvenient to flip through the book to find them. It&rsquo;s also easier if there&rsquo;s a sheet everyone can pass around instead of the one device with the PDF.</p>
 
@@ -191,7 +191,7 @@
           <source srcset="/images/longshot-city-quick-reference_hu7ca8f0ca4b157bb21a41ff6db8c085f4_511366_1349x1044_fit_q75_bgffffff_box_3.jpg" type="image/jpeg">
           <img src="/images/longshot-city-quick-reference_hu7ca8f0ca4b157bb21a41ff6db8c085f4_511366_1349x1044_fit_q75_h2_box_3.webp"alt="Longshot City character sheet"  width="1349"  height="1044"  loading="lazy" />
         </picture></figure>
-<p>Nothing tricky for these, I store the actual table contents in <code>array</code>s to make them easier to move around &ndash; they&rsquo;re quite long when the code formatter forces each number onto its own line. Just your standard comma separated values.</p>
+<p>Nothing tricky for these, just raw brute force. I store the actual table contents in arrays to make them easier to handle &ndash; they&rsquo;re quite long when the code formatter forces each number onto its own line, just your standard comma separated values.</p>
 <p>I need to do another editing pass or two on the rules reference &ndash; probably rip out the entire initiative section (&ldquo;let the GM tell you when it&rsquo;s your turn, each combat round is one two-page spread long&rdquo;) to make room for more examples.</p>
 
 			</div>
@@ -212,6 +212,13 @@
 
 		</article>
 		<div class="post-nav thin">
+			<a class="next-post" href="https://windowdump.github.io/posts/disks-n-daemons/">
+				<span class="post-nav-label"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left">
+      <line x1="19" y1="12" x2="5" y2="12"></line>
+      <polyline points="12 19 5 12 12 5"></polyline>
+   </svg>&nbsp;Newer</span><br><span>Disks &amp; Daemons</span>
+			</a>
 			<a class="prev-post" href="https://windowdump.github.io/posts/runic-magic/">
 				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
       stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
@@ -232,6 +239,13 @@
 		&#183; <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC&nbsp;BY-SA&nbsp;4.0</a>
 		&#183; made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>
 		<em>&</em> <a href="https://github.com/1bl4z3r/hermit-V2" target="_blank" rel="noopener">Hermit-V2</a>
+		
+		&#183;&nbsp;<a href="/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+   stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss">
+   <path d="M4 11a9 9 0 0 1 9 9"></path>
+   <path d="M4 4a16 16 0 0 1 16 16"></path>
+   <circle cx="5" cy="19" r="1"></circle>
+</svg></a>
 		
 	</p>
 </footer>

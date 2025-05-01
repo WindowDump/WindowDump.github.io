@@ -6,8 +6,68 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>CC BY-SA 4.0</copyright>
-		<lastBuildDate>Sat, 26 Apr 2025 16:47:32 -0400</lastBuildDate>
+		<lastBuildDate>Sun, 27 Apr 2025 11:06:41 -0400</lastBuildDate>
 		<atom:link href="https://windowdump.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Disks &amp; Daemons</title>
+			<link>https://windowdump.github.io/posts/disks-n-daemons/</link>
+			<pubDate>Sun, 27 Apr 2025 11:06:41 -0400</pubDate>
+			
+			<guid>https://windowdump.github.io/posts/disks-n-daemons/</guid>
+			<description><![CDATA[Trifold pamphlet module for FIST set inside the early internet, with a dungeon generator and dungeon procedures crammed inside.]]></description>
+			<content type="html"><![CDATA[
+<figure class="webp" ><picture>
+          <source srcset="/images/disks-n-daemons-pamphlet-1_hu059501e6aa2ceb546f00f04ccd7c95e6_1862655_1584x1224_fit_q75_h2_box_3.webp" type="image/webp">
+          <source srcset="/images/disks-n-daemons-pamphlet-1_hu059501e6aa2ceb546f00f04ccd7c95e6_1862655_1584x1224_fit_q75_bgffffff_box_3.jpg" type="image/jpeg">
+          <img src="/images/disks-n-daemons-pamphlet-1_hu059501e6aa2ceb546f00f04ccd7c95e6_1862655_1584x1224_fit_q75_h2_box_3.webp"alt="Disks &amp; Daemons, first page"  width="1584"  height="1224" />
+        </picture></figure>
+<ul>
+<li><a href="https://windowdump.itch.io/disks-and-daemons">Itch link</a></li>
+<li><a href="https://github.com/WindowDump/typst-ttrpg/blob/main/disks-n-daemons/pamphlet.pdf">Disks &amp; Daemons - Screen Version PDF</a></li>
+<li><a href="https://github.com/WindowDump/typst-ttrpg/blob/main/disks-n-daemons/pamphlet-print.pdf">Disks &amp; Daemons - Print Version PDF</a></li>
+<li><a href="https://github.com/WindowDump/typst-ttrpg/blob/main/disks-n-daemons/pamphlet-singles.pdf">Disks &amp; Daemons - Singles PDF</a></li>
+<li><a href="https://github.com/WindowDump/typst-ttrpg/tree/main/disks-n-daemons">Source code (Typst)</a></li>
+</ul>
+<p>Submission for <a href="https://itch.io/jam/fist-jam-ops-v">FIST: JAM OPS V</a>.</p>
+<p>It&rsquo;s <em>Rogue</em>, <em>Hackers: Heroes of the Computer Revolution</em>, and <em>TRON</em> in a blender with a splash of anti-canon worldbuilding and two splashes of OSR procedures. Dungeon procedures and procedural dungeons. Other key influences include <a href="https://github.com/agiacalone/jargonfile/blob/main/historical/jarg1-88-10-04.txt">The Hacker Jargon File</a> and a smattering of other media where you go into a computer network.</p>
+<h2 id="gaming-tech">Gaming tech</h2>
+
+<figure class="webp" ><picture>
+          <source srcset="/images/disks-n-daemons-pamphlet-2_hu267b25363488fc516726bac65d12660e_1646272_1584x1224_fit_q75_h2_box_3.webp" type="image/webp">
+          <source srcset="/images/disks-n-daemons-pamphlet-2_hu267b25363488fc516726bac65d12660e_1646272_1584x1224_fit_q75_bgffffff_box_3.jpg" type="image/jpeg">
+          <img src="/images/disks-n-daemons-pamphlet-2_hu267b25363488fc516726bac65d12660e_1646272_1584x1224_fit_q75_h2_box_3.webp"alt="Disks &amp; Daemons, second page"  width="1584"  height="1224"  loading="lazy" />
+        </picture></figure>
+<p>This dungeon generator was inspired by two dungeon generators: the method in &ldquo;O5R&rdquo; TTRPG <a href="https://www.fivetorchesdeep.com">Five Torches Deep</a> and the one in <a href="https://roguebasin.com/index.php/Rogue">Rogue</a>, that game that all those other games are kinda like. <em>Five Torches Deep</em> brings the <em>B/X D&amp;D</em> dangerous dungeon crawling to <em>D&amp;D 5e</em>&rsquo;s math scheme. <em>Rogue</em> was inspired by early <em>Dungeons &amp; Dragons</em>, much like the OSR.</p>
+<p><em>Five Torches Deep</em> features a generator where you shuffle a Rubik&rsquo;s Cube, then roll it like a d6 and interpret the results. Each color represents a different type of room. I realized that this theoretically gives you similar results to just rolling a d6 for each cell on a 3x3 grid (cubes are cubes, right?). What if you rolled 9 dice and smushed them together into a 3x3 grid? And what if we used different colored dice? There&rsquo;s a novel dungeon generator.</p>
+<p><em>Rogue</em> generates a floor by creating a 3x3 grid of random rooms. <a href="https://github.com/Davidslv/rogue/blob/master/rooms.c#L31">Exact logic</a>: up to 3 rooms are marked as &ldquo;gone&rdquo; (simply not there); rooms have a (dungeon level - 1) in 10 chance to be a dark room, and a 1 in 15 chance to be a maze, otherwise they&rsquo;re open lit rooms; rooms have a 50% chance to contain gold, and a 25% chance to contain a monster &ndash; 80% if the room contains gold too. I had to look up these exact numbers, but I&rsquo;ve played a bit of <em>Rogue</em> &ndash; enough to get bored with its level generator because I&rsquo;m spoiled by <em>Diablo</em>.</p>
+<p>Using two colors of dice gives me the same effect as &ldquo;gone&rdquo; rooms to <em>Five Torches Deep</em>, at the cost of only one more D6 table!</p>
+<p>The real meat is the table entries, which are little prompts for what&rsquo;s in the room. There&rsquo;s no overarching plot here, instead hints of strange things happening and the squad being hunted by the powers that control this space. This could provide a jumping-off point for a further campaign (pick something the players latch onto) or diversion from another game.</p>
+<p>I should probably demonstrate what prepping this actually looks like. The stocking procedures are <em>not</em> playtested. I also don&rsquo;t clarify what the exit doors look like - I was imaging picking an exterior wall (or interior to be weird) and deciding that wall had the exit.</p>
+<h2 id="layout-experiments">Layout experiments</h2>
+<p>I tried to do as much as I could with just text and typography, and the built-in features of Typst. Partly because I&rsquo;m lazy, but also to focus me on one tool at a time. So, this project has lots of lists and tables in various formats, trying to be eye-catching and pleasing without being distracting. I also took some hints from the FIST book. Typst can render rectangles with rounded corners, so I decided to use those.</p>
+<p>I&rsquo;m really happy with the dungeon generator spread. I&rsquo;m also pleased with the light gray accent panels and sections. The other side is kinda whatever. I like the logo, I had a lot of fun making it.</p>
+<p>Funny gradient is a placeholder that never got replaced. I wanted to warp some Unix source code around it, like <em>The Matrix</em> but a lot dorkier. I also wanted to hack up some graphics of what the Ideaspace looks like (what if <em>Return of the Obra Dinn</em> had a polygon budget in the dozens) and what the Daemons look like (they&rsquo;re literally just the little imp dudes from <em>Zero Punctuation</em>) but that was also out of scope.</p>
+<h1 id="source-code-discussion">Source code discussion</h1>
+<p>I wrote this with <a href="https://typst.app">Typst</a>! This was a big step up from my earlier projects. My initial idea was to create an ARPANET pointcrawl, then remembered I don&rsquo;t know how to make adventures or pointcrawls and scaled back my plans. I was strongly inspired by <a href="https://github.com/dodgepong/typst-ha-corvette-job/">dodgepong&rsquo;s Typst conversion of the HA Corvette Job</a> and <a href="https://claymorerpgs.itch.io/rations-collection">CLAYMORE&rsquo;s RATIONS collection</a> &ndash; a trifold pamphlet seemed perfect for a jam. Two pages, six panels. A bit of hacking and I was ready to actually write the thing, directly into the layout.</p>
+<h2 id="font-choice">Font choice</h2>
+<p><a href="https://practicaltypography.com/charter.html">Charter</a> for body text with that 80&rsquo;s corpo document feel. It holds up great on low DPI devices, like screens or consumer printers. This is anachronistic to the late 70&rsquo;s setting of this module, but I really like Charter. Let&rsquo;s say it was created earlier than its publication but its existence was suppressed by CYCLOPS.</p>
+<p><a href="https://github.com/Omnibus-Type/Archivo">Archivo</a>, for a late 20th century feel. Archivo Expanded turned out to be a decent substitute for FIST&rsquo;s Microgramma branding font at smaller point sizes, compared to common alternatives like <a href="https://www.theleagueofmoveabletype.com/orbitron">Orbitron</a>.</p>
+<p><a href="https://tug.org/FontCatalogue/cmrfonts.html">Computer Modern Roman Dunhill</a> for the logo. This is a pretty striking font, an artistic alternative to the classic Computer Modern that triggers LaTeX flashbacks in some readers. The logo places boxes around each glyph for a &ldquo;deconstructed&rdquo; appearance.</p>
+<h2 id="project-structure">Project structure</h2>
+<p>To separate content and presentation, there&rsquo;s a <a href="https://github.com/WindowDump/typst-ttrpg/blob/main/disks-n-daemons/template.typ">template file</a> and a <a href="https://github.com/WindowDump/typst-ttrpg/blob/main/disks-n-daemons/pamphlet.typ">main content file</a>. A trifold pamphlet is 6 panels - each of the panels is a content object. The main file is set up for screen viewing while I hack on it. For the <a href="https://github.com/WindowDump/typst-ttrpg/blob/main/disks-n-daemons/pamphlet-print.typ">print</a> and <a href="https://github.com/WindowDump/typst-ttrpg/blob/main/disks-n-daemons/pamphlet-singles.typ">singles</a> versions, I import the main file and place the panels in the desired order, or on separate pages.</p>
+<h2 id="dice-generator">Dice generator</h2>
+<p>I wanted to use <a href="https://speakthesky.itch.io/typeface-dicier">Dicier</a> but I noticed its shortcomings at multiple point sizes (<em>the lines keep changing thickness!</em>), so I slapped together my own <a href="https://github.com/WindowDump/typst-ttrpg/blob/main/disks-n-daemons/template.typ#L26">dice generator function</a>. This gives me full control over the stroke width, corner rounding, and background fill color without resorting to desperate hacks. It also lets me easily indicate if a die should be rotated (leading digit is odd), or if it should be an inverted color (leading digit is 2 or more). I&rsquo;m proud of the inline dice which are the same size as the text, allowing me to reference certain sides easily in little tables throughout the text.</p>
+<h2 id="rounded-corner-inner-radius">Rounded corner inner radius</h2>
+<p>Typst support rounding corners on blocks and rectangles. <em>FIST</em> uses rounded corners in some areas too, so I decided to have some fun with it. Making everything be a rounded blob is kinda 90&rsquo;s, and squircles are more 10&rsquo;s, but I thought it looked neat.</p>
+<p>Nesting rounded corners gives us a pleasing rounded border. The formula for calculating the inner radius is <code>inner radius = outer radius - thickness</code>. This works in all units (I used points). The formula&rsquo;s floating around the internet, <a href="https://border-radius.bechbox.com">here&rsquo;s an interactive example</a>.</p>
+<h1 id="whats-next">What&rsquo;s next?</h1>
+<p>I hacked on a revision 2 by writing this blog post, with an eye for cleaning up the text. A few months distance and now I see all the clunky phrasing, weird structure, etc.</p>
+<p>I&rsquo;d like to expand this out into a bigger version that has some art, examples of generation, room variations, maybe boxed text, who knows! The next pamphlet I make should be a bit less high-concept so it can actually fit.</p>
+<h2 id="anti-canon-notes">Anti-canon notes</h2>
+<p>The pseudonym <em>JRH</em> is an reference to <a href="https://www.catb.org/jargon/html/appendixb.html">J. Random Hacker</a>, or &ldquo;some random hacker that is in the way and annoying me.&rdquo; There is no city or country cited for Cambridge &ndash; choose your favorite higher learning institution from any of them.</p>
+]]></content>
+		</item>
 		
 		<item>
 			<title>Longshot City Character Sheet</title>
@@ -27,15 +87,16 @@
 <li><a href="https://github.com/WindowDump/typst-ttrpg/blob/main/longshot-city.typ">Source code (Typst)</a></li>
 </ul>
 <p>Link to <a href="https://melsonian-arts-council.itch.io/longshot-city">Longshot City</a>.</p>
-<p>The one time I ran this game I had a time-traveling ghost possess a mouse and hack into Rocketman&rsquo;s computer.</p>
+<p>The one time I ran this game I had a time-traveling ghost possess an influencer live-streaming a self-replicating robot outbreak so they could use their psychic powers.</p>
 <h1 id="source-code-discussion">Source code discussion</h1>
-<p>This is the first horizontal full-page character sheet I made. I made it in <a href="https://typst.app">Typst</a>.</p>
+<p>This is the first horizontal full-page character sheet I made. I used <a href="https://typst.app">Typst</a>.</p>
 <h2 id="font-choice">Font choice</h2>
 <p>I went with the <a href="https://fonts.google.com/specimen/Patrick+Hand+SC">Patrick Hand SC</a> font as an easy option for a handwritten font. Kinda like comics. For numbers I used <a href="https://www.behance.net/gallery/86895479/Comic-Helvetic-(Lat-Cyr)">Comic Helvetic</a>, a blursed cross between Comic Sans and Helvetica. Tables use <a href="https://github.com/huertatipografica/Alegreya">Alegreya</a>.</p>
 <h2 id="fun-with-layout">Fun with layout</h2>
-<p>I started by making a loose facsimile of the official sheet, with the grid evenly split down the center. After a while, I remembered I didn&rsquo;t need to fold this, so I messed around with the grid widths. This let me give the skills &amp; powers list and attacks list a bit more room to breathe.</p>
+<p>I started with a loose facsimile of the official sheet, with the grid evenly split down the center. After a while, I remembered I didn&rsquo;t need to fold the sheet or cut it in half, so I messed around with the grid&rsquo;s column widths, expressed as fractional units (<code>fr</code>). Typst made it easy to adjust the weights. This let me give the skills &amp; powers list and attacks list more room to breathe.</p>
 <h2 id="content-from-ranges">Content from ranges</h2>
-<p>In the <a href="content/posts/runic-magic.md">Runic Magic</a> doc, I used <code>array.map</code> to create content from an array of dictionaries. In this one, I use a <code>for</code> loop over a <code>range()</code>, each loop returning a 1-length <code>array</code> which are then combined into a single <code>array</code>, which is finally spread to make numbered copies of lines.</p>
+<p>In the <a href="content/posts/runic-magic.md">Runic Magic</a> project, I used <code>array.map</code> to create content from an array of dictionaries. For this project, I use a <code>for</code> loop over a <code>range()</code>. This lets me easily work with numbered content, such as the labels on the Attacks and Inventory sections of the sheet.</p>
+<p>Each iteration of the loop returns a 1-length <code>array</code>, which Typst combines into a single array that I then spread to populate the containing grid.</p>
 
     <aside class="admonition warning">
         <div class="admonition-title">
@@ -45,13 +106,12 @@
       <line x1="12" y1="8" x2="12" y2="12"></line>
       <line x1="12" y1="16" x2="12.01" y2="16"></line>
    </svg></div>Combined content</div>
-        <div class="admonition-content"><p>If your <code>for</code> loop returns <code>content</code>, it will all be merged into a single <code>content</code> object.</p>
+        <div class="admonition-content"><p>If your loop returns <code>content</code>, it will all be merged into a single <code>content</code> object:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">grid</span><span class="p">(</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">columns</span><span class="o">:</span> <span class="mi">7</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">  <span class="k">for</span> <span class="nx">x</span> <span class="k">in</span> <span class="nx">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">str</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">  <span class="p">},</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">ab_label</span><span class="p">[</span><span class="mi">7</span><span class="o">+</span><span class="p">],</span>
 </span></span><span class="line"><span class="cl"><span class="p">)</span>
 </span></span></code></pre></div><p>This loop produces a single <code>content</code> object: <code>[123456]</code>.</p>
 </div>
@@ -70,18 +130,18 @@
       <line x1="21" y1="12" x2="23" y2="12"></line>
       <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
       <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-   </svg></div>Spreading for loop</div>
-        <div class="admonition-content"><p>Return a 1-length array to have the <code>for</code> loop merge them all into a single <code>array</code>.</p>
+   </svg></div>Spreading a for loop</div>
+        <div class="admonition-content"><p>Return a 1-length array to have the loop merge them all into a single array:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">grid</span><span class="p">(</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">columns</span><span class="o">:</span> <span class="mi">7</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">  <span class="p">..</span><span class="k">for</span> <span class="nx">x</span> <span class="k">in</span> <span class="nx">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nx">str</span><span class="p">(</span><span class="nx">x</span><span class="p">),)</span>
 </span></span><span class="line"><span class="cl">  <span class="p">},</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">ab_label</span><span class="p">[</span><span class="mi">7</span><span class="o">+</span><span class="p">],</span>
 </span></span><span class="line"><span class="cl"><span class="p">)</span>
-</span></span></code></pre></div><p>Spread the result and the <code>grid</code> will be populated as desired.</p>
+</span></span></code></pre></div><p>Spreading the loop places 6 items in the <code>grid</code>: <code>[1], [2], [3], [4], [5], [6]</code>.</p>
 </div>
     </aside>
+<p>I didn&rsquo;t realize you could use the <code>*</code> operator to make copies of content, so there&rsquo;s a few spots where I use this method even though I don&rsquo;t need to do anything with the number.</p>
 <h2 id="quick-reference-sheet">Quick reference sheet</h2>
 <p>An exercise in information density. <em>Longshot City</em> uses per-weapon lookup tables for damage, which you copy onto your character sheet (in theory). Power stamina also aren&rsquo;t noted in the character backgrounds section, and it&rsquo;s inconvenient to flip through the book to find them. It&rsquo;s also easier if there&rsquo;s a sheet everyone can pass around instead of the one device with the PDF.</p>
 
@@ -90,7 +150,7 @@
           <source srcset="/images/longshot-city-quick-reference_hu7ca8f0ca4b157bb21a41ff6db8c085f4_511366_1349x1044_fit_q75_bgffffff_box_3.jpg" type="image/jpeg">
           <img src="/images/longshot-city-quick-reference_hu7ca8f0ca4b157bb21a41ff6db8c085f4_511366_1349x1044_fit_q75_h2_box_3.webp"alt="Longshot City character sheet"  width="1349"  height="1044"  loading="lazy" />
         </picture></figure>
-<p>Nothing tricky for these, I store the actual table contents in <code>array</code>s to make them easier to move around &ndash; they&rsquo;re quite long when the code formatter forces each number onto its own line. Just your standard comma separated values.</p>
+<p>Nothing tricky for these, just raw brute force. I store the actual table contents in arrays to make them easier to handle &ndash; they&rsquo;re quite long when the code formatter forces each number onto its own line, just your standard comma separated values.</p>
 <p>I need to do another editing pass or two on the rules reference &ndash; probably rip out the entire initiative section (&ldquo;let the GM tell you when it&rsquo;s your turn, each combat round is one two-page spread long&rdquo;) to make room for more examples.</p>
 ]]></content>
 		</item>
@@ -117,8 +177,10 @@
 <p>Spells are legally-distinct <em>D&amp;D</em> types, as was the style at the time. The runes to cast them are thematic, with more powerful spells requiring multiple runes. For a few examples, Light is <em><code>In Lor</code></em> &ndash; &ldquo;create light&rdquo;, Fireball is <em><code>Vas Flam Hur</code></em> &ndash; &ldquo;great flame wind&rdquo;, and Resurrect is <em><code>In Mani Corp</code></em> &ndash; &ldquo;create life death.&rdquo; Poke around the <a href="https://wiki.ultimacodex.com/wiki/Category:Ultima_VII_spells">Ultima VII spell list</a> for more.</p>
 <p>Because I could fit it, this document has instructions on how to use it as a FIST trait. For completeness&hellip;</p>
 <h2 id="runic-magic">RUNIC MAGIC</h2>
-<p>You are a practitioner of a magical art that uses runes as its fundamental unit. These 24 runes can be represented as cards on <a href="https://github.com/WindowDump/typst-ttrpg/blob/main/runic-magic.pdf">the second page of this document</a>. Assemble them into a deck. Combine runes to form a reasonable spell. Choose one or more runes and roll <strong>2D6 + modifiers</strong> to cast a spell, based on the runes used and any modifiers (see below).</p>
-<p>By default, a spell takes 30-60 seconds to cast, lasts for a single use or with active concentration, and affects you or someone you touch in a noticeable way. Once used, runes lose power until you draw runes again.</p>
+<p>You are a practitioner of a magical art that uses runes as its fundamental unit. These 24 runes can be represented as cards on <a href="https://github.com/WindowDump/typst-ttrpg/blob/main/runic-magic.pdf">the second page of this document</a>. Assemble them into a deck (allows for repeated random drawing with no duplicates).</p>
+<p>When you have time for meditation and connection with the sources of your power, such as between missions or at certain rendezvous points, return all your runes to the deck, shuffle, and draw <strong>2D6 + your number of traits</strong> runes. Once used, a rune loses power until you draw runes.</p>
+<p>To cast a spell, choose one or more runes to form the basis of a reasonable spell. Casting a spell is always <em>risky</em>, roll <strong>2D6 + modifiers</strong> (see below) like other risky actions to see if there is a complication or if the spell turns out badly.</p>
+<p>By default, a spell takes 30-60 seconds to cast, lasts for a single use or with active concentration, and affects you or someone you touch in a noticeable way.</p>
 <ul>
 <li>Add <strong>+ 1</strong> to the roll for each:
 <ul>
@@ -137,11 +199,8 @@
 </ul>
 </li>
 </ul>
-<p>When you have time for meditation and connection with the sources of your power, return all your runes to the deck, shuffle, and draw <strong>2D6 + your number of traits</strong> runes. You can typically do this between missions, ask the referee if it&rsquo;s possible at the rendezvous point or elsewhere.</p>
-<ul>
-<li>a bag of runes</li>
-<li>+1 MAX HP</li>
-</ul>
+<p>Trait item: a bag of 24 runes<br>
+Trait bonus: +1 MAX HP</p>
 
     <aside class="admonition warning">
         <div class="admonition-title">
@@ -177,7 +236,7 @@
       <line x1="15" y1="9" x2="9" y2="15"></line>
       <line x1="9" y1="9" x2="15" y2="15"></line>
    </svg></div>Expected content, found array.</div>
-        <div class="admonition-content"><p>Many functions like <code>grid</code> expect <code>content</code>, so this doesn&rsquo;t work.</p>
+        <div class="admonition-content"><p>Many functions like <code>grid</code> expect <code>content</code> (one or multiple instances). Passing an array to them results in an error:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">grid</span><span class="p">(</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">columns</span><span class="o">:</span> <span class="p">(</span><span class="mi">1</span><span class="nx">fr</span><span class="p">,)</span> <span class="o">*</span> <span class="mi">6</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">runes</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">rune</span> <span class="p">=&gt;</span> <span class="nx">grid</span><span class="p">(</span>
@@ -194,7 +253,7 @@
       <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
       <polyline points="22 4 12 14.01 9 11.01"></polyline>
    </svg></div>Spread the array!</div>
-        <div class="admonition-content"><p>The <code>..</code> spread operator returns the contents of the array, our desired <code>content</code>.</p>
+        <div class="admonition-content"><p>The <code>..</code> spread operator returns the contents of the array, our desired <code>content</code>:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">grid</span><span class="p">(</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">columns</span><span class="o">:</span> <span class="p">(</span><span class="mi">1</span><span class="nx">fr</span><span class="p">,)</span> <span class="o">*</span> <span class="mi">6</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">  <span class="p">..</span><span class="nx">runes</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">rune</span> <span class="p">=&gt;</span> <span class="nx">grid</span><span class="p">(</span>
