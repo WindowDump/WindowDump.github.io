@@ -6,7 +6,7 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>CC BY-SA 4.0</copyright>
-		<lastBuildDate>Thu, 01 May 2025 11:06:41 -0400</lastBuildDate>
+		<lastBuildDate>Fri, 16 May 2025 15:14:41 -0400</lastBuildDate>
 		<atom:link href="https://windowdump.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
 		
 		<item>
@@ -116,13 +116,23 @@
 </span></span></code></pre></div></div>
     </aside>
 <h2 id="dice-generator">Dice generator</h2>
-<p>I wanted to use <a href="https://speakthesky.itch.io/typeface-dicier">Dicier</a> but I noticed its shortcomings at multiple point sizes (<em>the lines keep changing thickness!</em>), so I slapped together my own <a href="https://github.com/WindowDump/typst-ttrpg/blob/main/disks-n-daemons/template.typ#L26">dice generator function</a>. This gives me full control over the stroke width, corner rounding, and background fill color without resorting to desperate hacks. It also lets me easily indicate if a die should be rotated (leading digit is odd), or if it should be an inverted color (leading digit is 2 or more). I&rsquo;m proud of the inline dice which are the same size as the text, allowing me to reference certain sides easily in little tables throughout the text.</p>
+
+<figure class="webp" ><picture>
+          <source srcset="/images/disks-n-daemons-dice_hu6c68b653c1b5d195f80bf1d90738cd61_80208_576x400_fit_q75_h2_box_3.webp" type="image/webp">
+          <source srcset="/images/disks-n-daemons-dice_hu6c68b653c1b5d195f80bf1d90738cd61_80208_576x400_fit_q75_bgffffff_box_3.jpg" type="image/jpeg">
+          <img src="/images/disks-n-daemons-dice_hu6c68b653c1b5d195f80bf1d90738cd61_80208_576x400_fit_q75_h2_box_3.webp"alt="All 24 dice from the dice generator on a gray background"  width="576"  height="400"  loading="lazy" />
+        </picture><figcaption>
+            <p>All 24 dice from the dice generator.</p>
+          </figcaption></figure>
+<p>I wanted to use <a href="https://speakthesky.itch.io/typeface-dicier">Dicier</a> but I noticed its shortcomings at multiple point sizes (<em>the lines keep changing thickness!</em>), so I slapped together my own <a href="https://github.com/WindowDump/typst-ttrpg/blob/main/disks-n-daemons/template.typ#L26">dice generator function</a>. This gives me full control over the stroke width, corner rounding, and background fill color without resorting to desperate hacks. For consistency and readability, the light dice have a white face with black lines and pips and the dark dice have white pips.</p>
+<p>For ease of layout, the function takes a number as its only unnamed argument. The ones digit chooses the number, the tens digit controls rotation (even or odd) and if it&rsquo;s a dark die (2 or more). I was into numeral dice, but after working on this project I&rsquo;ve come around on pips and prefer them now. As long as I&rsquo;m not trying to find the sum of more than 3 dice at once.</p>
+<p>I have a template variation of the function to create inline dice the same size as the text, without affecting the layout. I use them as pictograms to make little tables throughout the text.</p>
 <h2 id="rounded-corner-inner-radius">Rounded corner inner radius</h2>
 <p>Typst support rounding corners on blocks and rectangles. <em>FIST</em> uses rounded corners in some parts of its layout, so I decided to have some fun with it. Making everything be a rounded blob is kinda 90&rsquo;s, and squircles are more 10&rsquo;s, but I thought it looked neat.</p>
 <p>Nesting rounded corners gives us a pleasing rounded border. The formula for calculating the inner radius is <code>inner radius = outer radius - thickness</code>. This works in all units (I used points). The formula&rsquo;s floating around the internet, <a href="https://border-radius.bechbox.com">here&rsquo;s an interactive example</a>.</p>
 <h1 id="whats-next">What&rsquo;s next?</h1>
 <p>I hacked on a revision 2 by writing this blog post, with an eye for cleaning up the text. A few months distance and now I see all the clunky phrasing, weird structure, etc.</p>
-<p>I&rsquo;d like to expand this out into a bigger version that has some art, examples of generation, room variations, maybe boxed text, who knows! The next pamphlet I make should be a bit less high-concept so it can actually fit.</p>
+<p>I&rsquo;d like to expand this out into a bigger version that has some art, examples of generation, room variations, maybe boxed text, who knows! The next pamphlet I make should be a bit less high-concept so its content can actually fit and leave room for art.</p>
 <h2 id="anti-canon-notes">Anti-canon notes</h2>
 <p>The pseudonym <em>JRH</em> is an reference to <a href="https://www.catb.org/jargon/html/appendixb.html">J. Random Hacker</a>, or &ldquo;some random hacker that is in the way and annoying me.&rdquo; Remember, nobody hates nerds more than other nerds, especially if they&rsquo;re the same type of nerd.</p>
 <p>There is no city or country cited for Cambridge &ndash; choose your favorite higher learning institution from any of them.</p>
@@ -148,8 +158,8 @@
 <li><a href="https://github.com/WindowDump/typst-ttrpg/blob/main/orbital-blues-char-print-friendly.pdf">Longshot City character sheet and quick reference - PDF</a></li>
 <li><a href="https://github.com/WindowDump/typst-ttrpg/blob/main/longshot-city.typ">Source code (Typst)</a></li>
 </ul>
-<p>Link to <a href="https://melsonian-arts-council.itch.io/longshot-city">Longshot City</a>.</p>
-<p>The one time I ran this game I had a time-traveling ghost possess an influencer live-streaming a self-replicating robot outbreak so they could use their psychic powers.</p>
+<p>Check out <a href="https://melsonian-arts-council.itch.io/longshot-city">Longshot City</a> on Itch.</p>
+<p>The one time I ran this game I had a time-traveling ghost possess an influencer live-streaming a self-replicating robot outbreak so they could use their psychic powers to fight the robots. Later the ghost possessed another hero while he ate drive-thru food so they could both recover with the sustenance.</p>
 <h1 id="source-code-discussion">Source code discussion</h1>
 <p>This is the first horizontal full-page character sheet I made. I used <a href="https://typst.app">Typst</a>.</p>
 <h2 id="font-choice">Font choice</h2>

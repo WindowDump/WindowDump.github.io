@@ -16,7 +16,7 @@
 <meta itemprop="name" content="Disks &amp; Daemons">
 <meta itemprop="description" content="Trifold pamphlet module for FIST set inside the early internet, with a dungeon generator and dungeon procedures crammed inside."><meta itemprop="datePublished" content="2025-05-01T11:06:41-04:00" />
 <meta itemprop="dateModified" content="2025-05-01T11:06:41-04:00" />
-<meta itemprop="wordCount" content="1734">
+<meta itemprop="wordCount" content="1821">
 <meta itemprop="keywords" content="FIST,Typst,WoDu," /><meta property="og:title" content="Disks &amp; Daemons" />
 <meta property="og:description" content="Trifold pamphlet module for FIST set inside the early internet, with a dungeon generator and dungeon procedures crammed inside." />
 <meta property="og:type" content="article" />
@@ -30,7 +30,7 @@
 <meta name="twitter:site" content="Tabletop Ergonomics">
 <meta name="twitter:creator" content="Window Dump">
 <title>Disks &amp; Daemons | Tabletop Ergonomics</title>
-<link rel="stylesheet dns-prefetch preconnect preload prefetch" as="style" href="https://windowdump.github.io/css/style.min.ee5d56fd233f41b29de69c7998e2457aeafa1ffd4005ad6191c7059ce1ca4cec.css" integrity="sha256-7l1W/SM/QbKd5px5mOJFeur6H/1ABa1hkccFnOHKTOw=" crossorigin="anonymous">
+<link rel="stylesheet dns-prefetch preconnect preload prefetch" as="style" href="https://windowdump.github.io/css/style.min.9462c84207fd3f3c1daf83faebe562592b747f84166793ff92ecb8c4ad73bc57.css" integrity="sha256-lGLIQgf9Pzwdr4P66+ViWSt0f4QWZ5P/kuy4xK1zvFc=" crossorigin="anonymous">
 	</head>
 <body id="page">
 	<header id="site-header" class="animated slideInUp">
@@ -113,7 +113,7 @@
       <line x1="16" y1="13" x2="8" y2="13"></line>
       <line x1="16" y1="17" x2="8" y2="17"></line>
       <polyline points="10 9 9 9 8 9"></polyline>
-   </svg>1734 words</p>
+   </svg>1821 words</p>
 </div>
 			<hr class="post-end">
 			<div class="content">
@@ -217,13 +217,23 @@
 </span></span></code></pre></div></div>
     </aside>
 <h2 id="dice-generator">Dice generator<a href="#dice-generator" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
-<p>I wanted to use <a href="https://speakthesky.itch.io/typeface-dicier">Dicier</a> but I noticed its shortcomings at multiple point sizes (<em>the lines keep changing thickness!</em>), so I slapped together my own <a href="https://github.com/WindowDump/typst-ttrpg/blob/main/disks-n-daemons/template.typ#L26">dice generator function</a>. This gives me full control over the stroke width, corner rounding, and background fill color without resorting to desperate hacks. It also lets me easily indicate if a die should be rotated (leading digit is odd), or if it should be an inverted color (leading digit is 2 or more). I&rsquo;m proud of the inline dice which are the same size as the text, allowing me to reference certain sides easily in little tables throughout the text.</p>
+
+<figure class="webp" ><picture>
+          <source srcset="/images/disks-n-daemons-dice_hu6c68b653c1b5d195f80bf1d90738cd61_80208_576x400_fit_q75_h2_box_3.webp" type="image/webp">
+          <source srcset="/images/disks-n-daemons-dice_hu6c68b653c1b5d195f80bf1d90738cd61_80208_576x400_fit_q75_bgffffff_box_3.jpg" type="image/jpeg">
+          <img src="/images/disks-n-daemons-dice_hu6c68b653c1b5d195f80bf1d90738cd61_80208_576x400_fit_q75_h2_box_3.webp"alt="All 24 dice from the dice generator on a gray background"  width="576"  height="400"  loading="lazy" />
+        </picture><figcaption>
+            <p>All 24 dice from the dice generator.</p>
+          </figcaption></figure>
+<p>I wanted to use <a href="https://speakthesky.itch.io/typeface-dicier">Dicier</a> but I noticed its shortcomings at multiple point sizes (<em>the lines keep changing thickness!</em>), so I slapped together my own <a href="https://github.com/WindowDump/typst-ttrpg/blob/main/disks-n-daemons/template.typ#L26">dice generator function</a>. This gives me full control over the stroke width, corner rounding, and background fill color without resorting to desperate hacks. For consistency and readability, the light dice have a white face with black lines and pips and the dark dice have white pips.</p>
+<p>For ease of layout, the function takes a number as its only unnamed argument. The ones digit chooses the number, the tens digit controls rotation (even or odd) and if it&rsquo;s a dark die (2 or more). I was into numeral dice, but after working on this project I&rsquo;ve come around on pips and prefer them now. As long as I&rsquo;m not trying to find the sum of more than 3 dice at once.</p>
+<p>I have a template variation of the function to create inline dice the same size as the text, without affecting the layout. I use them as pictograms to make little tables throughout the text.</p>
 <h2 id="rounded-corner-inner-radius">Rounded corner inner radius<a href="#rounded-corner-inner-radius" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 <p>Typst support rounding corners on blocks and rectangles. <em>FIST</em> uses rounded corners in some parts of its layout, so I decided to have some fun with it. Making everything be a rounded blob is kinda 90&rsquo;s, and squircles are more 10&rsquo;s, but I thought it looked neat.</p>
 <p>Nesting rounded corners gives us a pleasing rounded border. The formula for calculating the inner radius is <code>inner radius = outer radius - thickness</code>. This works in all units (I used points). The formula&rsquo;s floating around the internet, <a href="https://border-radius.bechbox.com">here&rsquo;s an interactive example</a>.</p>
 <h1 id="whats-next">What&rsquo;s next?<a href="#whats-next" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h1>
 <p>I hacked on a revision 2 by writing this blog post, with an eye for cleaning up the text. A few months distance and now I see all the clunky phrasing, weird structure, etc.</p>
-<p>I&rsquo;d like to expand this out into a bigger version that has some art, examples of generation, room variations, maybe boxed text, who knows! The next pamphlet I make should be a bit less high-concept so it can actually fit.</p>
+<p>I&rsquo;d like to expand this out into a bigger version that has some art, examples of generation, room variations, maybe boxed text, who knows! The next pamphlet I make should be a bit less high-concept so its content can actually fit and leave room for art.</p>
 <h2 id="anti-canon-notes">Anti-canon notes<a href="#anti-canon-notes" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 <p>The pseudonym <em>JRH</em> is an reference to <a href="https://www.catb.org/jargon/html/appendixb.html">J. Random Hacker</a>, or &ldquo;some random hacker that is in the way and annoying me.&rdquo; Remember, nobody hates nerds more than other nerds, especially if they&rsquo;re the same type of nerd.</p>
 <p>There is no city or country cited for Cambridge &ndash; choose your favorite higher learning institution from any of them.</p>
@@ -266,13 +276,6 @@
 		&#183; <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC&nbsp;BY-SA&nbsp;4.0</a>
 		&#183; made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>
 		<em>&</em> <a href="https://github.com/1bl4z3r/hermit-V2" target="_blank" rel="noopener">Hermit-V2</a>
-		
-		&#183;&nbsp;<a href="/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-   stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss">
-   <path d="M4 11a9 9 0 0 1 9 9"></path>
-   <path d="M4 4a16 16 0 0 1 16 16"></path>
-   <circle cx="5" cy="19" r="1"></circle>
-</svg></a>
 		
 	</p>
 </footer>
