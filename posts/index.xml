@@ -10,6 +10,256 @@
 		<atom:link href="https://windowdump.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Slappers Only!</title>
+			<link>https://windowdump.github.io/posts/slappers-only/</link>
+			<pubDate>Fri, 26 Dec 2025 13:40:51 -0400</pubDate>
+			
+			<guid>https://windowdump.github.io/posts/slappers-only/</guid>
+			<description><![CDATA[A package of variant rules for D&D 2014 (and D&D 2024) and similar games for a simpler, more streamlined game.]]></description>
+			<content type="html"><![CDATA[<p><a href="https://docs.google.com/document/d/1Wx3rxBcqC3OxlITgtT3iubx8x-doOWdmC1K3qw6vAf4/edit">Original Doc</a> by <a href="https://deldon.itch.io">deldon</a>. Text has been edited by Window Dump.</p>
+<p>This is a curated collection of the official optional rules in <em>D&amp;D 2014</em> (aka <em>5e &lsquo;14</em>) culled from the <em>DMG</em> and <em>PHB</em> to create a simpler, more streamlined game. These rules should be compatible with many other similar games including <em>D&amp;D 2024</em> (<em>5e &lsquo;24</em>), <em>Tales of the Valiant</em>, and <em>Level Up!: Advanced 5e</em>.</p>
+
+    <aside class="admonition info">
+        <div class="admonition-title">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info">
+      <circle cx="12" cy="12" r="10"></circle>
+      <line x1="12" y1="16" x2="12" y2="12"></line>
+      <line x1="12" y1="8" x2="12.01" y2="8"></line>
+   </svg></div>Editorial editions</div>
+        <div class="admonition-content">Additions to the original text are in these helpful admonition boxes. <em>Slappers Only!</em> was created as a variant using rules text in <em>5e &lsquo;14</em> as a high concept joke. I think jamming in more OSR tech can&rsquo;t hurt (hi <em>Nimble</em>!), and it&rsquo;ll be fun.</div>
+    </aside>
+<h1 id="the-core-rule">The Core Rule</h1>
+<p>Above all, the players agree that the dungeon master will follow the core rules of play as a neutral arbitrator, as referenced in How to Play (<em>PHB</em> p. 6), and The Role of the Dice: Ignoring the Dice (<em>DMG</em> p. 236):</p>
+<ol>
+<li>The DM describes the environment</li>
+<li>The players describe what they want to do</li>
+<li>The DM narrates the results of the adventurers’ actions</li>
+</ol>
+<p>The DM is at the sole liberty to say if and when the dice and any other rules come into play.</p>
+<h1 id="character-creation">Character creation</h1>
+<p>Additional options (races, classes, subclasses, etc.) may be available at the DM&rsquo;s discretion, based on the campaign setting.</p>
+<h2 id="race">Race</h2>
+<p>Limit offerings to that which is available in the <em>Essentials Kit</em>:</p>
+<ul>
+<li>Dwarf (hill, mountain)</li>
+<li>Elf (high, wood)</li>
+<li>Halfling (lightfoot, stout)</li>
+<li>Human (no variants)</li>
+</ul>
+
+    <aside class="admonition note">
+        <div class="admonition-title">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2">
+      <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+   </svg></div>Variant for 5e &#39;24</div>
+        <div class="admonition-content">Use the <em>5e &lsquo;24</em> species without stat boosts if you&rsquo;d like. It&rsquo;s not fun picking a race just for the stat boosts.</div>
+    </aside>
+<h2 id="class">Class</h2>
+<p>Limit offerings to that which is available in the <em>Essentials Kit</em>:</p>
+<ul>
+<li>Bard (College of Lore, College of Valor)</li>
+<li>Cleric (Life Domain, War Domain)</li>
+<li>Fighter (Champion, Eldritch Knight)</li>
+<li>Rogue (Thief, Arcane Trickster)</li>
+<li>Wizard (Evocation, Transmutation)</li>
+</ul>
+<h2 id="spells">Spells</h2>
+<p>Limit offerings to that which is available in the <em>Essentials Kit</em>.</p>
+
+    <aside class="admonition note">
+        <div class="admonition-title">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2">
+      <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+   </svg></div>Spell availability</div>
+        <div class="admonition-content"><p>If you don&rsquo;t have the <em>Essentials Kit</em> on hand, stick to the core spell list in the <em>PHB</em> or System Reference Document of your choice.</p>
+<p>If you want food and water to matter and require planning, consider removing or modifying spells like Goodberry or Create Water. Otherwise, let players know these spells might not be useful.</p>
+</div>
+    </aside>
+<h2 id="optional-rules-settings">Optional rules settings</h2>
+<p><strong>Levels</strong> are capped at 5.</p>
+<p><strong>Multiclassing</strong> is forbidden.</p>
+<p><strong>Feats</strong> are forbidden.</p>
+<p><strong>Skill Proficiencies by Class</strong> following Skill Variants: Ability Check Proficiency (<em>DMG</em> p. 263)</p>
+<p>The skill list is not utilized, instead each class gains proficiency on all checks made with an ability, selected from this list:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Class</th>
+<th style="text-align:left">Proficiency Options</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Bard</td>
+<td style="text-align:left">Any One</td>
+</tr>
+<tr>
+<td style="text-align:left">Cleric</td>
+<td style="text-align:left">Intelligence, Wisdom, or Charisma</td>
+</tr>
+<tr>
+<td style="text-align:left">Fighter</td>
+<td style="text-align:left">Strength, Dexterity, or Wisdom</td>
+</tr>
+<tr>
+<td style="text-align:left">Rogue</td>
+<td style="text-align:left">Dexterity, Intelligence, Wisdom, or Charisma</td>
+</tr>
+<tr>
+<td style="text-align:left">Wizard</td>
+<td style="text-align:left">Intelligence or Wisdom</td>
+</tr>
+</tbody>
+</table>
+
+    <aside class="admonition note">
+        <div class="admonition-title">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2">
+      <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+   </svg></div>Other classes</div>
+        <div class="admonition-content"><p>If you&rsquo;d like to play with other classes, they may choose their ability to gain proficiency with from this list:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Class</th>
+<th style="text-align:left">Proficiency Options</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Barbarian</td>
+<td style="text-align:left">Strength, Dexterity, or Wisdom</td>
+</tr>
+<tr>
+<td style="text-align:left">Druid</td>
+<td style="text-align:left">Intelligence or Wisdom</td>
+</tr>
+<tr>
+<td style="text-align:left">Monk</td>
+<td style="text-align:left">Strength, Dexterity, or Intelligence</td>
+</tr>
+<tr>
+<td style="text-align:left">Paladin</td>
+<td style="text-align:left">Strength, Wisdom, or Charisma</td>
+</tr>
+<tr>
+<td style="text-align:left">Ranger</td>
+<td style="text-align:left">Strength, Dexterity, or Wisdom</td>
+</tr>
+<tr>
+<td style="text-align:left">Sorcerer</td>
+<td style="text-align:left">Intelligence or Charisma</td>
+</tr>
+<tr>
+<td style="text-align:left">Warlock</td>
+<td style="text-align:left">Intelligence or Charisma</td>
+</tr>
+</tbody>
+</table></div>
+    </aside>
+<h2 id="backgrounds">Backgrounds</h2>
+<p><strong>Backgrounds</strong> grant one ability check proficiency relevant to your background, and a total of two relevant tool or language proficiencies.</p>
+
+    <aside class="admonition note">
+        <div class="admonition-title">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2">
+      <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+   </svg></div>Variant for 5e &#39;24</div>
+        <div class="admonition-content">In addition, Backgrounds grant stat boosts (+2 to one and +1 to another, or +1 to three) and a Background Feat. This is a <em>one-time</em> exception to the &ldquo;no Feats&rdquo; rule.</div>
+    </aside>
+
+    <aside class="admonition tip">
+        <div class="admonition-title">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+   </svg></div>Alternate resting</div>
+        <div class="admonition-content"><p>Stolen from <a href="https://nimblerpg.com">Nimble</a>.</p>
+<p>A <strong>Short Rest</strong> is 10 minutes of catching your breath and tending to injuries. You can spend Hit Dice to recover HP, one at a time, rolling them and adding your CON to determine the recovered HP.</p>
+<p>A <strong>Field Rest</strong> is 8 hours of sleep and a meal and counts as a Short Rest. You can spend Hit Dice to recover HP, taking the maximum value for each expended Hit Die, adding your CON to die as usual.</p>
+<p>A <strong>Safe Rest</strong> is an overnight rest in a safe location designated by the DM and counts as a Long Rest. Safe locations could include lodging at an inn, or some other protected or hidden spot like an oasis, a sacred shrine, etc. Recover all spent HP, Hit Dice, Spell Slots, failed Death Saves, and other class resources.</p>
+<p>For a gritter feel, a Safe Rest may require a full week of rest.</p>
+</div>
+    </aside>
+<h1 id="level-advancement">Level advancement</h1>
+<p>Decide as a group which of the three variant level advancement options you would like to utilize, found on <em>DMG</em> p. 261:</p>
+<ol>
+<li>Milestone</li>
+<li>Session-based</li>
+<li>Story-based</li>
+<li>(Optional) Use XP as per <a href="https://media.wizards.com/2017/dnd/downloads/UA-ThreePillarXP.pdf">Unearthed Arcana: Three-Pillars Experience</a> with the following adjustment: Do not grant any experience for combat encounter of CR less than a quarter of the party’s level.</li>
+</ol>
+<h1 id="combat">Combat</h1>
+<p><strong>Flanking</strong> is not utilized.</p>
+<h2 id="initiative">Initiative</h2>
+<p>Use the Initiative Variants: Side Initiative (<em>DMG</em> p. 270)</p>
+<ul>
+<li>Initiative is settled by a simple unmodified d20 contest, side vs side. Winner goes first</li>
+<li>On their turn, all members of a side can act in any order they wish.</li>
+<li>When all members of a side have finished their turn, the other side begins.</li>
+</ul>
+
+    <aside class="admonition tip">
+        <div class="admonition-title">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+   </svg></div>Alternate Initiative: Speed Sandwich</div>
+        <div class="admonition-content"><p>For less predictable combat and more initiative checks:</p>
+<ul>
+<li>Find the Initiative Score of the monster with the highest DEX. This is 11 + their DEX.</li>
+<li>Use this score as the DC of an initiative check (DEX, no PB) for each PC at the beginning of each round of combat.
+<ul>
+<li>PC&rsquo;s that pass are <em>Fast</em> and act before the enemies</li>
+<li>PC&rsquo;s that fail are <em>Slow</em> and act after the enemies.</li>
+</ul>
+</li>
+<li>A round has three phases: <em>Fast</em>, Enemies, <em>Slow</em>, with each actor in a phase taking their turn in any order.</li>
+<li>Boss monsters might break these rules, such as taking an extra turn at the beginning or end of each round.
+<ul>
+<li>A PC with an exceptionally high initiative check (like a natural 20) always goes first!</li>
+</ul>
+</li>
+</ul></div>
+    </aside>
+<h2 id="morale">Morale</h2>
+<p>Use the optional rule Morale (<em>DMG</em> p. 273) to speed up combat on the monster’s side.</p>
+<ul>
+<li>Make a DC 10 WIS Save for an individual creature or using a group’s leader.
+<ul>
+<li>If the opposition is overwhelming the save is made with disadvantage.</li>
+</ul>
+</li>
+<li>On a failure, the group flees by the most expedient route or else surrenders if escape is not possible.</li>
+</ul>
+<h1 id="character-advancement-beyond-level-5">Character advancement beyond Level 5</h1>
+<p>There are many, many rules that this system removes from the normal system of character creation that happens throughout play. These mechanics can still be added to characters, but it is up to the player of the character to communicate to the DM if they are seeking these mechanics (such as a feat or higher level spell) so the DM can tie the mechanic to a fictional source (such as a tutor, or library of forbidden arcane knowledge) and place it in the campaign world.</p>
+<p>The DM is also of course at the liberty to place any number of mechanical boons throughout the world, but should do so in a manner that compliments the fiction.</p>
+]]></content>
+		</item>
+		
+		<item>
 			<title>Disks &amp; Daemons</title>
 			<link>https://windowdump.github.io/posts/disks-n-daemons/</link>
 			<pubDate>Thu, 01 May 2025 11:06:41 -0400</pubDate>
