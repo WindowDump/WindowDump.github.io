@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Orbital Blues on Tabletop Ergonomics</title>
+    <link>http://localhost:1313/tags/orbital-blues/</link>
+    <description>Recent content in Orbital Blues on Tabletop Ergonomics</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>CC BY-SA 4.0</copyright>
+    <lastBuildDate>Fri, 16 May 2025 15:14:41 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/orbital-blues/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Orbital Blues Character Sheet</title>
+      <link>http://localhost:1313/posts/orbital-blues-char-sheet/</link>
+      <pubDate>Fri, 16 May 2025 15:14:41 -0400</pubDate>
+      <guid>http://localhost:1313/posts/orbital-blues-char-sheet/</guid>
+      <description>image of character sheet&#xA;link to pdf and source&#xA;link to orbital blues&#xA;see you space cowboy&#xA;design notes horizontal cause that&amp;rsquo;s how I roll&#xA;inspired by orbital blues&amp;rsquo; retro typography and layout, and its generous tracking&#xA;special attention paid to lines connecting or not connecting&#xA;montserrat is pretty&#xA;archivo felt right&#xA;league spartan for a further throwback feel, imitating the book&amp;rsquo;s style&#xA;Source code discussion another typst joint&#xA;Data structure make a dictionary, pass it in.</description>
+    </item>
+  </channel>
+</rss>

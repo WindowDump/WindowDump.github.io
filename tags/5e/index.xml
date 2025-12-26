@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>5e on Tabletop Ergonomics</title>
+    <link>http://localhost:1313/tags/5e/</link>
+    <description>Recent content in 5e on Tabletop Ergonomics</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>CC BY-SA 4.0</copyright>
+    <lastBuildDate>Mon, 15 Sep 2025 14:13:35 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/5e/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>5eRGO Version 2</title>
+      <link>http://localhost:1313/posts/5ergo-v2/</link>
+      <pubDate>Mon, 15 Sep 2025 14:13:35 -0400</pubDate>
+      <guid>http://localhost:1313/posts/5ergo-v2/</guid>
+      <description>first off, this is a hack of shitpost hack Slappers Only! which uses 5e &amp;lsquo;14 optional rules only.&#xA;second off, feel free to ignore these rules and free kriegspiel the game as usual. Read them and let the germ take root in your subconscious. For fun!&#xA;These rules are hypothetically 5e &amp;lsquo;24 character sheet compatible.&#xA;Terms and definitions This is a game for 3 to 6 players: 1 GM and 2-5 Players.</description>
+    </item>
+  </channel>
+</rss>

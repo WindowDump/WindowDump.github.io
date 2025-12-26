@@ -6,7 +6,7 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>CC BY-SA 4.0</copyright>
-		<lastBuildDate>Fri, 16 May 2025 15:14:41 -0400</lastBuildDate>
+		<lastBuildDate>Fri, 26 Dec 2025 13:40:51 -0400</lastBuildDate>
 		<atom:link href="https://windowdump.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
 		
 		<item>
@@ -163,7 +163,7 @@
 <h1 id="source-code-discussion">Source code discussion</h1>
 <p>This is the first horizontal full-page character sheet I made. I used <a href="https://typst.app">Typst</a>.</p>
 <h2 id="font-choice">Font choice</h2>
-<p>I went with the <a href="https://fonts.google.com/specimen/Patrick+Hand+SC">Patrick Hand SC</a> font as an easy option for a handwritten font. Kinda like comics. For numbers I used <a href="https://www.behance.net/gallery/86895479/Comic-Helvetic-(Lat-Cyr)">Comic Helvetic</a>, a blursed cross between Comic Sans and Helvetica. Tables use <a href="https://github.com/huertatipografica/Alegreya">Alegreya</a>.</p>
+<p>I went with the <a href="https://fonts.google.com/specimen/Patrick+Hand+SC">Patrick Hand SC</a> font as an easy option for a handwritten font. Kinda like comics. For numbers I used <a href="https://www.behance.net/gallery/86895479/Comic-Helvetic-(Lat-Cyr)">Comic Helvetic</a>, a blursed cross between Comic Sans and Helvetica. Tables use <a href="https://github.com/huertatipografica/Alegreya">Alegreya</a>, since it&rsquo;s pretty and is similar to the body text in <em>Longshot City</em>.</p>
 <h2 id="fun-with-layout">Fun with layout</h2>
 <p>I started with a loose facsimile of the official sheet, with the grid evenly split down the center. After a while, I remembered I didn&rsquo;t need to fold the sheet or cut it in half, so I messed around with the grid&rsquo;s column widths, expressed as fractional units (<code>fr</code>). Typst made it easy to adjust the weights. This let me give the skills &amp; powers list and attacks list more room to breathe.</p>
 <h2 id="content-from-ranges">Content from ranges</h2>
@@ -213,9 +213,9 @@
 </span></span></code></pre></div><p>Spreading the loop places 6 items in the <code>grid</code>: <code>[1], [2], [3], [4], [5], [6]</code>.</p>
 </div>
     </aside>
-<p>I didn&rsquo;t realize you could use the <code>*</code> operator to make copies of content, so there&rsquo;s a few spots where I use this method even though I don&rsquo;t need to do anything with the number.</p>
+<p>I didn&rsquo;t realize you could use the <code>*</code> operator to make copies of content, so there&rsquo;s a few spots where I use this method even though I don&rsquo;t use the iterator variable.</p>
 <h2 id="quick-reference-sheet">Quick reference sheet</h2>
-<p>An exercise in information density. <em>Longshot City</em> uses per-weapon lookup tables for damage, which you copy onto your character sheet (in theory). Power stamina also aren&rsquo;t noted in the character backgrounds section, and it&rsquo;s inconvenient to flip through the book to find them. It&rsquo;s also easier if there&rsquo;s a sheet everyone can pass around instead of the one device with the PDF.</p>
+<p>An exercise in information density. <em>Longshot City</em> uses per-weapon lookup tables for damage, which you copy onto your character sheet for easy reference. The stamina costs of the various powers aren&rsquo;t noted in the character backgrounds section, and it&rsquo;s inconvenient to flip through the book to find them. The <em>Fighting Fantasy</em> descended rules use a mixture of roll under vs. stat and roll high plus stat, which can be confusing for new players. I fit all the relevant information onto a single page, a reference sheet the table can pass around instead of a device with the PDF is also convenient.</p>
 
 <figure class="webp" ><picture>
           <source srcset="/images/longshot-city-quick-reference_hu7ca8f0ca4b157bb21a41ff6db8c085f4_511366_1349x1044_fit_q75_h2_box_3.webp" type="image/webp">
@@ -223,6 +223,7 @@
           <img src="/images/longshot-city-quick-reference_hu7ca8f0ca4b157bb21a41ff6db8c085f4_511366_1349x1044_fit_q75_h2_box_3.webp"alt="Longshot City character sheet"  width="1349"  height="1044"  loading="lazy" />
         </picture></figure>
 <p>Nothing tricky for these, just raw brute force. I store the actual table contents in arrays to make them easier to handle &ndash; they&rsquo;re quite long when the code formatter forces each number onto its own line, just your standard comma separated values.</p>
+<p>I tried putting all of the game terms in small caps for fun, using Typst show rules. However, since the quick reference is about 50% game terms, this makes it feel like it&rsquo;s shouting at you.</p>
 <p>I need to do another editing pass or two on the rules reference &ndash; probably rip out the entire initiative section (&ldquo;let the GM tell you when it&rsquo;s your turn, each combat round is one two-page spread long&rdquo;) to make room for more examples.</p>
 ]]></content>
 		</item>
