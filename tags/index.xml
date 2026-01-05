@@ -7,8 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>CC BY-SA 4.0</copyright>
-    <lastBuildDate>Wed, 31 Dec 2025 16:54:12 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 04 Jan 2026 16:43:31 -0500</lastBuildDate>
     <atom:link href="https://windowdump.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gameable-Location</title>
+      <link>https://windowdump.github.io/tags/gameable-location/</link>
+      <pubDate>Sun, 04 Jan 2026 16:43:31 -0500</pubDate>
+      <guid>https://windowdump.github.io/tags/gameable-location/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>The-Cauldron</title>
+      <link>https://windowdump.github.io/tags/the-cauldron/</link>
+      <pubDate>Sun, 04 Jan 2026 16:43:31 -0500</pubDate>
+      <guid>https://windowdump.github.io/tags/the-cauldron/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Meta</title>
       <link>https://windowdump.github.io/tags/meta/</link>
@@ -63,20 +77,6 @@
       <link>https://windowdump.github.io/tags/troika/</link>
       <pubDate>Sat, 26 Apr 2025 16:47:32 -0400</pubDate>
       <guid>https://windowdump.github.io/tags/troika/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Remix</title>
-      <link>https://windowdump.github.io/tags/remix/</link>
-      <pubDate>Sat, 26 Apr 2025 16:36:39 -0400</pubDate>
-      <guid>https://windowdump.github.io/tags/remix/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Testing</title>
-      <link>https://windowdump.github.io/tags/testing/</link>
-      <pubDate>Thu, 03 Oct 2024 12:55:34 -0400</pubDate>
-      <guid>https://windowdump.github.io/tags/testing/</guid>
       <description></description>
     </item>
   </channel>
